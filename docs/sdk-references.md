@@ -29,3 +29,8 @@ as [handoff.html](handoff.html). Visual inspiration is acknowledged to the
 [Touchy AZ WIP discussion](https://virtualdj.com/forums/269853/VirtualDJ_Skins/%5BWIP%5D_Touchy_-_touch-first_skin_family_%28CDJ_%2F_XDJ-style%29_for_touchscreens.html).
 No Touchy code/assets were downloaded or reused; availability/public release is
 not assumed. The graphic atlas is drawn by this repository's own generator.
+
+0.3.0 additional sources: [waveform manual](https://virtualdj.com/manuals/virtualdj/interface/topsection/appcontrols/layout/waveform.html)
+and [documented palette example](https://virtualdj.com/forums/270039/VirtualDJ_Skins/Rekordbox_3_Band_color_waveform_XLM_edit_help..html).
+Native waveform overlay structure was compared with the official SDK browser
+example. Shapes/frequency rendering remains distinct; see waveform-modes.md.

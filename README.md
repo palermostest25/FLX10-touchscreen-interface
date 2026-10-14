@@ -4,28 +4,30 @@ A native **VirtualDJ XML + PNG skin** for a Surface Pro 7 and DDJ-FLX10. The
 Surface provides a 3:2 player display; VirtualDJ handles audio and libraries;
 the FLX10 remains the mixer and transport controller.
 
-**Status: 0.2.0 hardware validation candidate.** The archives are built and
+**Status: 0.3.0 hardware validation candidate.** The archives are built and
 structurally checked. They have **not been loaded in VirtualDJ** here. Surface
 touch, FLX10 audio/mapping, licensing, and rekordbox OneLibrary import are
 **NOT RUN**. This is a usable installation/test milestone, not a verified stage
 release. Complete the [hardware checklist](docs/hardware-validation.md) before
 using it at a gig. No simulated audio engine or fabricated USB results are included.
 
-The performance layout now follows the **Touchy AZ screenshot linked in the
-handoff**: black canvas, large stacked waveforms at the top, a central cue bank,
-and four larger player displays in a 2×2 grid below. The earlier generic row-card
-layout has been replaced. This is an independent implementation of the visual
-structure, not the original Touchy skin. The linked author thread provides
-screenshots but no downloadable skin ZIP as checked on 14 October 2026.
+The performance layout now follows the **real XDJ-AZ screen linked in the
+handoff**: metadata beside each scrolling wave, labeled cue banks in the middle,
+and four compact strips with time, overview waveform and BPM below. The two-wave
+view starts with decks 1+2 and keeps all four lower strips visible. This is an
+independent VirtualDJ skin, not AlphaTheta firmware or the original Touchy skin.
 
 [Inspect the empty-state layout diagram](docs/screenshots/layout-reference-structure.png)
 (offline geometry rendering, **not** a VirtualDJ runtime screenshot).
+Also inspect the [two-wave](docs/screenshots/layout-az-two12-illustrative.png)
+and [four-wave](docs/screenshots/layout-az-four-illustrative.png) design studies.
+Their illustrative track data/wave shapes are not packaged into the skin.
 
 ## What is included
 
 - Four live native scratch waveforms, track overview waveforms, cue markers,
   track titles/artists, BPM, pitch, harmonic key, remaining/elapsed time, and
-  playing/loop/quantize indicators, all bound to VirtualDJ's decks.
+  playing/loop/quantize/sync/master indicators, all bound to VirtualDJ's decks.
 - Four-deck view and larger two-deck views for 1+2 or 3+4; four-deck status on
   every main page. No onscreen jog wheels, mixer faders, or EQs.
 - Source, Browse, Playlist, Search and local VirtualDJ Sidelist/Tag List pages
@@ -186,10 +188,25 @@ compatibility with your rekordbox USB.
 
 ## 7. Use AZ Touch
 
+### Choose waveform colors after activation
+
+- **AZ COLORS** switches the native scrolling/overview renderers to **Shapes**
+  with blue, orange and ivory components. VirtualDJ Shapes represent **stem
+  components**, so the matching palette is not proof of AZ frequency-band parity.
+- **FREQUENCY COLORS** switches to native **Colors** and enables
+  **`waveUseFrequency`**. This uses frequency-based coloring, but its palette is
+  selected by VirtualDJ's `coloredWaveforms` option. The custom shape colors do
+  not override that palette. Do not confuse these modes.
+- **ZOOM − / +** changes native scrolling-wave zoom for all displayed decks.
+  It changes visualization, not pitch or song position.
+
+These taps save host display preferences; startup does not silently change them.
+Record prior `skinWaveformType`, `skinOverviewType` and `waveUseFrequency` values
+if you want to restore the previous appearance. See [waveform notes](docs/waveform-modes.md).
+
 - **WAVEFORM** returns to the player screen from any main page. Choose **4 DECK**,
-  **2 DECK / 1 + 2**, or **2 DECK / 3 + 4**. The lower four-deck player grid remains.
-  Tap a waveform's deck number to change the sidebar display; this changes only
-  displayed metadata and does not select an audio deck or change headphone PFL.
+  **2 DECK / 1 + 2**, or **2 DECK / 3 + 4**. All four lower player strips remain.
+  Each scrolling wave has its own source path, key and tempo panel at the left.
 - **SOURCE** exposes the native tree. Expand OneLibrary → USB → playlist.
   Local storage and local rekordbox collections are whatever the actual native
   tree exposes; the skin does not invent drive tiles or copy music.
@@ -213,8 +230,11 @@ compatibility with your rekordbox USB.
 - **TAG LIST** shows the local VirtualDJ **Sidelist**. Select a track in Browse,
   use **ADD TO TAG**, then switch to Tag List. Verify focused selection behavior
   on your build. This is not the Pioneer USB Tag List format.
-- Tap a deck's time display to switch remaining/elapsed. PLAYING, LOOP, Q LOOP
-  and Q CUE are passive indicators. Cue labels are passive too; use FLX10 pads.
+- Tap a deck's time display to switch remaining/elapsed. TOTAL is correctly
+  labeled if it is the initial host time mode. PLAYING, LOOP, Q and MASTER are
+  passive indicators. SYNC reads native `is_sync` (BPM and phase while playing;
+  BPM while stopped); it is not a sync button or persistent beatlock. Cue labels
+  are passive too. Use FLX10 controls; the factory hardware sync mapping is unchanged.
 - Waveforms and track overviews are display-only, including while paused.
   **Confirm T07 touch/drag safety before relying on the hit shields.**
 - **FULLSCREEN** cycles the host window modes; **SETTINGS** opens VirtualDJ
@@ -222,7 +242,7 @@ compatibility with your rekordbox USB.
 
 Navigation changes page visibility only. It does not switch the audio preset,
 move faders, trigger effects or reset decks. Startup explicitly selects the
-four-deck Waveform page. Other preferences are saved by VirtualDJ as supported.
+two-wave 1+2 page with four lower strips. Other preferences are saved by the host.
 
 ## 8. Roll back or uninstall
 
@@ -241,6 +261,8 @@ then removes it or restores its backed-up package. It refuses to delete a
 different version. It leaves settings/mappings/databases alone and does not
 automatically edit VirtualDJ's selected skin. For a spike install, use its own
 receipt. Restore older replacements in reverse installation order.
+Display preferences explicitly changed using AZ COLORS/FREQUENCY COLORS/ZOOM
+remain host preferences; restore their prior values manually if desired.
 
 ## Troubleshooting
 

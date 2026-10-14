@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<skin name="AZ Touch SDK spike · Hardware candidate" version="8" width="1368" height="912" nbdecks="4" image="az-touch.png" author="AZ Touch project" comment="Independent Surface 3:2 display. Hardware candidate 0.2.0.">
+<skin name="AZ Touch SDK spike · Hardware candidate" version="8" width="1368" height="912" nbdecks="4" image="az-touch.png" author="AZ Touch project" comment="Independent Surface 3:2 display. Hardware candidate 0.3.0.">
   <font name="Segoe UI" />
   <textzone>
     <pos x="24" y="14" />

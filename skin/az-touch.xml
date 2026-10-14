@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<skin name="AZ Touch 3x2 · Hardware candidate" version="8" width="1368" height="912" nbdecks="4" image="az-touch.png" author="AZ Touch project" comment="Independent Surface 3:2 display. Hardware candidate 0.2.0.">
+<skin name="AZ Touch 3x2 · Hardware candidate" version="8" width="1368" height="912" nbdecks="4" image="az-touch.png" author="AZ Touch project" comment="Independent Surface 3:2 display. Hardware candidate 0.3.0.">
   <font name="Segoe UI" />
   <textzone>
     <pos x="24" y="14" />
     <size width="230" height="42" />
-    <text font="Segoe UI" fontsize="30" color="#00a9dc" align="left" text="AZ TOUCH" />
+    <text font="Segoe UI" fontsize="30" color="#00a9dc" align="left" text="WAVEFORM" />
   </textzone>
   <textzone>
     <pos x="255" y="18" />
     <size width="560" height="32" />
-    <text font="Segoe UI" fontsize="16" color="#7f8d9b" align="left" text="FLX10 / FOUR-DECK TOUCH DISPLAY" />
+    <text font="Segoe UI" fontsize="16" color="#7f8d9b" align="left" text="AZ TOUCH / DDJ-FLX10" />
   </textzone>
   <textzone>
     <pos x="952" y="18" />
@@ -92,11 +92,11 @@
     <selected color="#245e9f" border="#34495e" border_size="2" radius="0" />
     <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="SETTINGS" />
   </button>
-  <oninit action="skin_panel 'waveform' on &amp; skin_panel 'four' on &amp; skin_panel 'display1' on" />
+  <oninit action="skin_panel 'waveform' on &amp; skin_panel 'two12' on" />
   <panel name="waveform" group="az-pages" visible="yes">
     <button action="skin_panel 'four' on" query="skin_panel 'four'">
       <pos x="24" y="130" />
-      <size width="160" height="52" />
+      <size width="150" height="52" />
       <off color="#10151c" border="#34495e" border_size="2" radius="0" />
       <over color="#243647" border="#34495e" border_size="2" radius="0" />
       <down color="#245e9f" border="#34495e" border_size="2" radius="0" />
@@ -104,8 +104,8 @@
       <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="4 DECK" />
     </button>
     <button action="skin_panel 'two12' on" query="skin_panel 'two12'">
-      <pos x="196" y="130" />
-      <size width="218" height="52" />
+      <pos x="184" y="130" />
+      <size width="192" height="52" />
       <off color="#10151c" border="#34495e" border_size="2" radius="0" />
       <over color="#243647" border="#34495e" border_size="2" radius="0" />
       <down color="#245e9f" border="#34495e" border_size="2" radius="0" />
@@ -113,1506 +113,2616 @@
       <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="2 DECK / 1 + 2" />
     </button>
     <button action="skin_panel 'two34' on" query="skin_panel 'two34'">
-      <pos x="426" y="130" />
-      <size width="218" height="52" />
+      <pos x="386" y="130" />
+      <size width="192" height="52" />
       <off color="#10151c" border="#34495e" border_size="2" radius="0" />
       <over color="#243647" border="#34495e" border_size="2" radius="0" />
       <down color="#245e9f" border="#34495e" border_size="2" radius="0" />
       <selected color="#245e9f" border="#34495e" border_size="2" radius="0" />
       <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="2 DECK / 3 + 4" />
     </button>
-    <textzone>
-      <pos x="676" y="139" />
-      <size width="120" height="30" />
-      <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="right" text="SOURCE" />
-    </textzone>
+    <button action="setting 'skinWaveformType' 'shapes' &amp; setting 'skinOverviewType' 'shapes'" query="setting 'skinWaveformType' 'shapes'">
+      <pos x="590" y="130" />
+      <size width="204" height="52" />
+      <off color="#10151c" border="#34495e" border_size="2" radius="0" />
+      <over color="#243647" border="#34495e" border_size="2" radius="0" />
+      <down color="#245e9f" border="#34495e" border_size="2" radius="0" />
+      <selected color="#245e9f" border="#34495e" border_size="2" radius="0" />
+      <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="AZ COLORS" />
+    </button>
+    <button action="setting 'skinWaveformType' 'colors' &amp; setting 'skinOverviewType' 'colors' &amp; setting 'waveUseFrequency' on" query="setting 'skinWaveformType' 'colors' &amp; setting 'waveUseFrequency'">
+      <pos x="804" y="130" />
+      <size width="264" height="52" />
+      <off color="#10151c" border="#34495e" border_size="2" radius="0" />
+      <over color="#243647" border="#34495e" border_size="2" radius="0" />
+      <down color="#245e9f" border="#34495e" border_size="2" radius="0" />
+      <selected color="#245e9f" border="#34495e" border_size="2" radius="0" />
+      <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="FREQUENCY COLORS" />
+    </button>
+    <button action="zoom -0.05" query="false">
+      <pos x="1080" y="130" />
+      <size width="126" height="52" />
+      <off color="#10151c" border="#34495e" border_size="2" radius="0" />
+      <over color="#243647" border="#34495e" border_size="2" radius="0" />
+      <down color="#245e9f" border="#34495e" border_size="2" radius="0" />
+      <selected color="#245e9f" border="#34495e" border_size="2" radius="0" />
+      <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="ZOOM −" />
+    </button>
+    <button action="zoom +0.05" query="false">
+      <pos x="1218" y="130" />
+      <size width="126" height="52" />
+      <off color="#10151c" border="#34495e" border_size="2" radius="0" />
+      <over color="#243647" border="#34495e" border_size="2" radius="0" />
+      <down color="#245e9f" border="#34495e" border_size="2" radius="0" />
+      <selected color="#245e9f" border="#34495e" border_size="2" radius="0" />
+      <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="ZOOM +" />
+    </button>
     <panel name="four" group="az-performance" visible="yes">
       <deck deck="1">
-        <button action="skin_panel 'display1' on" query="skin_panel 'display1'">
-          <pos x="160" y="184" />
-          <size width="44" height="72" />
-          <off color="#10151c" border="#34495e" border_size="2" radius="0" />
-          <over color="#243647" border="#34495e" border_size="2" radius="0" />
-          <down color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <selected color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="1" />
-        </button>
-        <scratchwave orientation="horizontal" color="full">
-          <pos x="212" y="184" />
-          <size width="1132" height="72" />
-          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#dddddd" phrasecolor="#ffffff" color="#4a4a4a" transparency="0.5" mirrored="yes" background="no" />
-          <cue y="0" height="72">
-            <text dx="12" dy="0" size="14" />
-            <mask width="12" height="72" x="0" y="912" />
-          </cue>
-        </scratchwave>
-        <square color="#ffffff">
-          <pos x="777" y="184" />
-          <size width="2" height="72" />
+        <square color="#232323">
+          <pos x="24" y="194" />
+          <size width="164" height="94" />
         </square>
+        <textzone>
+          <pos x="32" y="197" />
+          <size width="148" height="23" />
+          <text font="Segoe UI" fontsize="19" color="#2394ff" align="left" text="DECK 1" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="223" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="11" color="#dddddd" align="left" action="get_filepath" />
+        </textzone>
+        <textzone visibility="not loaded">
+          <pos x="32" y="223" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" text="NO TRACK" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="242" />
+          <size width="32" height="18" />
+          <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="KEY" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="70" y="240" />
+          <size width="108" height="23" />
+          <text font="Segoe UI" fontsize="20" color="#ffffff" align="left" action="get_key 'musical'" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="270" />
+          <size width="57" height="14" />
+          <text font="Segoe UI" fontsize="10" color="#b2b2b2" align="left" text="TEMPO" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="91" y="264" />
+          <size width="87" height="23" />
+          <text font="Segoe UI" fontsize="16" color="#ffffff" align="right" format="%pitch" />
+        </textzone>
+        <scratchwave orientation="horizontal" color="#1678ff" color2="#acd8ff" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+          <pos x="204" y="194" />
+          <size width="1140" height="94" />
+          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#eeeeee" phrasecolor="#ff4a4a" color="#777777" transparency="0.7" mirrored="yes" background="no" />
+          <cue y="0" height="94">
+            <text dx="12" dy="0" size="14" />
+            <mask width="12" height="94" x="0" y="912" />
+          </cue>
+          <overlay>
+            <pos x="773" y="194" />
+            <size width="2" height="94" />
+            <background x="48" y="912" />
+          </overlay>
+        </scratchwave>
         <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-          <pos x="212" y="184" />
-          <size width="1132" height="72" />
+          <pos x="204" y="194" />
+          <size width="1140" height="94" />
           <off color="transparent" />
-          <mouserect x="212" y="184" width="1132" height="72" />
+          <mouserect x="204" y="194" width="1140" height="94" />
           <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
         </button>
       </deck>
       <deck deck="2">
-        <button action="skin_panel 'display2' on" query="skin_panel 'display2'">
-          <pos x="160" y="260" />
-          <size width="44" height="72" />
-          <off color="#10151c" border="#34495e" border_size="2" radius="0" />
-          <over color="#243647" border="#34495e" border_size="2" radius="0" />
-          <down color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <selected color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="2" />
-        </button>
-        <scratchwave orientation="horizontal" color="full">
-          <pos x="212" y="260" />
-          <size width="1132" height="72" />
-          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#dddddd" phrasecolor="#ffffff" color="#4a4a4a" transparency="0.5" mirrored="yes" background="no" />
-          <cue y="0" height="72">
-            <text dx="12" dy="0" size="14" />
-            <mask width="12" height="72" x="0" y="912" />
-          </cue>
-        </scratchwave>
-        <square color="#ffffff">
-          <pos x="777" y="260" />
-          <size width="2" height="72" />
+        <square color="#232323">
+          <pos x="24" y="294" />
+          <size width="164" height="94" />
         </square>
+        <textzone>
+          <pos x="32" y="297" />
+          <size width="148" height="23" />
+          <text font="Segoe UI" fontsize="19" color="#2394ff" align="left" text="DECK 2" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="323" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="11" color="#dddddd" align="left" action="get_filepath" />
+        </textzone>
+        <textzone visibility="not loaded">
+          <pos x="32" y="323" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" text="NO TRACK" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="342" />
+          <size width="32" height="18" />
+          <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="KEY" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="70" y="340" />
+          <size width="108" height="23" />
+          <text font="Segoe UI" fontsize="20" color="#ffffff" align="left" action="get_key 'musical'" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="370" />
+          <size width="57" height="14" />
+          <text font="Segoe UI" fontsize="10" color="#b2b2b2" align="left" text="TEMPO" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="91" y="364" />
+          <size width="87" height="23" />
+          <text font="Segoe UI" fontsize="16" color="#ffffff" align="right" format="%pitch" />
+        </textzone>
+        <scratchwave orientation="horizontal" color="#1678ff" color2="#acd8ff" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+          <pos x="204" y="294" />
+          <size width="1140" height="94" />
+          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#eeeeee" phrasecolor="#ff4a4a" color="#777777" transparency="0.7" mirrored="yes" background="no" />
+          <cue y="0" height="94">
+            <text dx="12" dy="0" size="14" />
+            <mask width="12" height="94" x="0" y="912" />
+          </cue>
+          <overlay>
+            <pos x="773" y="294" />
+            <size width="2" height="94" />
+            <background x="48" y="912" />
+          </overlay>
+        </scratchwave>
         <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-          <pos x="212" y="260" />
-          <size width="1132" height="72" />
+          <pos x="204" y="294" />
+          <size width="1140" height="94" />
           <off color="transparent" />
-          <mouserect x="212" y="260" width="1132" height="72" />
+          <mouserect x="204" y="294" width="1140" height="94" />
           <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
         </button>
       </deck>
       <deck deck="3">
-        <button action="skin_panel 'display3' on" query="skin_panel 'display3'">
-          <pos x="160" y="336" />
-          <size width="44" height="72" />
-          <off color="#10151c" border="#34495e" border_size="2" radius="0" />
-          <over color="#243647" border="#34495e" border_size="2" radius="0" />
-          <down color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <selected color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="3" />
-        </button>
-        <scratchwave orientation="horizontal" color="full">
-          <pos x="212" y="336" />
-          <size width="1132" height="72" />
-          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#dddddd" phrasecolor="#ffffff" color="#4a4a4a" transparency="0.5" mirrored="yes" background="no" />
-          <cue y="0" height="72">
-            <text dx="12" dy="0" size="14" />
-            <mask width="12" height="72" x="0" y="912" />
-          </cue>
-        </scratchwave>
-        <square color="#ffffff">
-          <pos x="777" y="336" />
-          <size width="2" height="72" />
+        <square color="#232323">
+          <pos x="24" y="394" />
+          <size width="164" height="94" />
         </square>
+        <textzone>
+          <pos x="32" y="397" />
+          <size width="148" height="23" />
+          <text font="Segoe UI" fontsize="19" color="#2394ff" align="left" text="DECK 3" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="423" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="11" color="#dddddd" align="left" action="get_filepath" />
+        </textzone>
+        <textzone visibility="not loaded">
+          <pos x="32" y="423" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" text="NO TRACK" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="442" />
+          <size width="32" height="18" />
+          <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="KEY" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="70" y="440" />
+          <size width="108" height="23" />
+          <text font="Segoe UI" fontsize="20" color="#ffffff" align="left" action="get_key 'musical'" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="470" />
+          <size width="57" height="14" />
+          <text font="Segoe UI" fontsize="10" color="#b2b2b2" align="left" text="TEMPO" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="91" y="464" />
+          <size width="87" height="23" />
+          <text font="Segoe UI" fontsize="16" color="#ffffff" align="right" format="%pitch" />
+        </textzone>
+        <scratchwave orientation="horizontal" color="#1678ff" color2="#acd8ff" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+          <pos x="204" y="394" />
+          <size width="1140" height="94" />
+          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#eeeeee" phrasecolor="#ff4a4a" color="#777777" transparency="0.7" mirrored="yes" background="no" />
+          <cue y="0" height="94">
+            <text dx="12" dy="0" size="14" />
+            <mask width="12" height="94" x="0" y="912" />
+          </cue>
+          <overlay>
+            <pos x="773" y="394" />
+            <size width="2" height="94" />
+            <background x="48" y="912" />
+          </overlay>
+        </scratchwave>
         <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-          <pos x="212" y="336" />
-          <size width="1132" height="72" />
+          <pos x="204" y="394" />
+          <size width="1140" height="94" />
           <off color="transparent" />
-          <mouserect x="212" y="336" width="1132" height="72" />
+          <mouserect x="204" y="394" width="1140" height="94" />
           <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
         </button>
       </deck>
       <deck deck="4">
-        <button action="skin_panel 'display4' on" query="skin_panel 'display4'">
-          <pos x="160" y="412" />
-          <size width="44" height="72" />
-          <off color="#10151c" border="#34495e" border_size="2" radius="0" />
-          <over color="#243647" border="#34495e" border_size="2" radius="0" />
-          <down color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <selected color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="4" />
-        </button>
-        <scratchwave orientation="horizontal" color="full">
-          <pos x="212" y="412" />
-          <size width="1132" height="72" />
-          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#dddddd" phrasecolor="#ffffff" color="#4a4a4a" transparency="0.5" mirrored="yes" background="no" />
-          <cue y="0" height="72">
-            <text dx="12" dy="0" size="14" />
-            <mask width="12" height="72" x="0" y="912" />
-          </cue>
-        </scratchwave>
-        <square color="#ffffff">
-          <pos x="777" y="412" />
-          <size width="2" height="72" />
+        <square color="#232323">
+          <pos x="24" y="494" />
+          <size width="164" height="94" />
         </square>
+        <textzone>
+          <pos x="32" y="497" />
+          <size width="148" height="23" />
+          <text font="Segoe UI" fontsize="19" color="#2394ff" align="left" text="DECK 4" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="523" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="11" color="#dddddd" align="left" action="get_filepath" />
+        </textzone>
+        <textzone visibility="not loaded">
+          <pos x="32" y="523" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" text="NO TRACK" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="542" />
+          <size width="32" height="18" />
+          <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="KEY" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="70" y="540" />
+          <size width="108" height="23" />
+          <text font="Segoe UI" fontsize="20" color="#ffffff" align="left" action="get_key 'musical'" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="570" />
+          <size width="57" height="14" />
+          <text font="Segoe UI" fontsize="10" color="#b2b2b2" align="left" text="TEMPO" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="91" y="564" />
+          <size width="87" height="23" />
+          <text font="Segoe UI" fontsize="16" color="#ffffff" align="right" format="%pitch" />
+        </textzone>
+        <scratchwave orientation="horizontal" color="#1678ff" color2="#acd8ff" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+          <pos x="204" y="494" />
+          <size width="1140" height="94" />
+          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#eeeeee" phrasecolor="#ff4a4a" color="#777777" transparency="0.7" mirrored="yes" background="no" />
+          <cue y="0" height="94">
+            <text dx="12" dy="0" size="14" />
+            <mask width="12" height="94" x="0" y="912" />
+          </cue>
+          <overlay>
+            <pos x="773" y="494" />
+            <size width="2" height="94" />
+            <background x="48" y="912" />
+          </overlay>
+        </scratchwave>
         <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-          <pos x="212" y="412" />
-          <size width="1132" height="72" />
+          <pos x="204" y="494" />
+          <size width="1140" height="94" />
           <off color="transparent" />
-          <mouserect x="212" y="412" width="1132" height="72" />
+          <mouserect x="204" y="494" width="1140" height="94" />
           <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
         </button>
+      </deck>
+      <deck deck="1">
+        <textzone>
+          <pos x="24" y="600" />
+          <size width="318" height="18" />
+          <text font="Segoe UI" fontsize="12" color="#aaaaaa" align="center" text="HOT CUE / 1" />
+        </textzone>
+        <square color="#232323">
+          <pos x="24" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#ff334d" visibility="has_cue 1">
+          <pos x="24" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 1">
+          <pos x="24" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="A" />
+        </textzone>
+        <textzone visibility="has_cue 1">
+          <pos x="48" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue1" />
+        </textzone>
+        <textzone visibility="not has_cue 1">
+          <pos x="28" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="A —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="105" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#12d3ff" visibility="has_cue 2">
+          <pos x="105" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 2">
+          <pos x="105" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="B" />
+        </textzone>
+        <textzone visibility="has_cue 2">
+          <pos x="129" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue2" />
+        </textzone>
+        <textzone visibility="not has_cue 2">
+          <pos x="109" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="B —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="186" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#12e95b" visibility="has_cue 3">
+          <pos x="186" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 3">
+          <pos x="186" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="C" />
+        </textzone>
+        <textzone visibility="has_cue 3">
+          <pos x="210" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue3" />
+        </textzone>
+        <textzone visibility="not has_cue 3">
+          <pos x="190" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="C —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="267" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#8d20ff" visibility="has_cue 4">
+          <pos x="267" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 4">
+          <pos x="267" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="D" />
+        </textzone>
+        <textzone visibility="has_cue 4">
+          <pos x="291" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue4" />
+        </textzone>
+        <textzone visibility="not has_cue 4">
+          <pos x="271" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="D —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="24" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#17e071" visibility="has_cue 5">
+          <pos x="24" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 5">
+          <pos x="24" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="E" />
+        </textzone>
+        <textzone visibility="has_cue 5">
+          <pos x="48" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue5" />
+        </textzone>
+        <textzone visibility="not has_cue 5">
+          <pos x="28" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="E —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="105" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#ff8224" visibility="has_cue 6">
+          <pos x="105" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 6">
+          <pos x="105" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="F" />
+        </textzone>
+        <textzone visibility="has_cue 6">
+          <pos x="129" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue6" />
+        </textzone>
+        <textzone visibility="not has_cue 6">
+          <pos x="109" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="F —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="186" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#254bff" visibility="has_cue 7">
+          <pos x="186" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 7">
+          <pos x="186" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="G" />
+        </textzone>
+        <textzone visibility="has_cue 7">
+          <pos x="210" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue7" />
+        </textzone>
+        <textzone visibility="not has_cue 7">
+          <pos x="190" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="G —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="267" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#e5ea1b" visibility="has_cue 8">
+          <pos x="267" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 8">
+          <pos x="267" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="H" />
+        </textzone>
+        <textzone visibility="has_cue 8">
+          <pos x="291" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue8" />
+        </textzone>
+        <textzone visibility="not has_cue 8">
+          <pos x="271" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="H —" />
+        </textzone>
+      </deck>
+      <deck deck="2">
+        <textzone>
+          <pos x="354" y="600" />
+          <size width="318" height="18" />
+          <text font="Segoe UI" fontsize="12" color="#aaaaaa" align="center" text="HOT CUE / 2" />
+        </textzone>
+        <square color="#232323">
+          <pos x="354" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#ff334d" visibility="has_cue 1">
+          <pos x="354" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 1">
+          <pos x="354" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="A" />
+        </textzone>
+        <textzone visibility="has_cue 1">
+          <pos x="378" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue1" />
+        </textzone>
+        <textzone visibility="not has_cue 1">
+          <pos x="358" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="A —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="435" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#12d3ff" visibility="has_cue 2">
+          <pos x="435" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 2">
+          <pos x="435" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="B" />
+        </textzone>
+        <textzone visibility="has_cue 2">
+          <pos x="459" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue2" />
+        </textzone>
+        <textzone visibility="not has_cue 2">
+          <pos x="439" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="B —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="516" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#12e95b" visibility="has_cue 3">
+          <pos x="516" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 3">
+          <pos x="516" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="C" />
+        </textzone>
+        <textzone visibility="has_cue 3">
+          <pos x="540" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue3" />
+        </textzone>
+        <textzone visibility="not has_cue 3">
+          <pos x="520" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="C —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="597" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#8d20ff" visibility="has_cue 4">
+          <pos x="597" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 4">
+          <pos x="597" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="D" />
+        </textzone>
+        <textzone visibility="has_cue 4">
+          <pos x="621" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue4" />
+        </textzone>
+        <textzone visibility="not has_cue 4">
+          <pos x="601" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="D —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="354" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#17e071" visibility="has_cue 5">
+          <pos x="354" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 5">
+          <pos x="354" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="E" />
+        </textzone>
+        <textzone visibility="has_cue 5">
+          <pos x="378" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue5" />
+        </textzone>
+        <textzone visibility="not has_cue 5">
+          <pos x="358" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="E —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="435" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#ff8224" visibility="has_cue 6">
+          <pos x="435" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 6">
+          <pos x="435" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="F" />
+        </textzone>
+        <textzone visibility="has_cue 6">
+          <pos x="459" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue6" />
+        </textzone>
+        <textzone visibility="not has_cue 6">
+          <pos x="439" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="F —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="516" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#254bff" visibility="has_cue 7">
+          <pos x="516" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 7">
+          <pos x="516" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="G" />
+        </textzone>
+        <textzone visibility="has_cue 7">
+          <pos x="540" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue7" />
+        </textzone>
+        <textzone visibility="not has_cue 7">
+          <pos x="520" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="G —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="597" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#e5ea1b" visibility="has_cue 8">
+          <pos x="597" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 8">
+          <pos x="597" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="H" />
+        </textzone>
+        <textzone visibility="has_cue 8">
+          <pos x="621" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue8" />
+        </textzone>
+        <textzone visibility="not has_cue 8">
+          <pos x="601" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="H —" />
+        </textzone>
+      </deck>
+      <deck deck="3">
+        <textzone>
+          <pos x="684" y="600" />
+          <size width="318" height="18" />
+          <text font="Segoe UI" fontsize="12" color="#aaaaaa" align="center" text="HOT CUE / 3" />
+        </textzone>
+        <square color="#232323">
+          <pos x="684" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#ff334d" visibility="has_cue 1">
+          <pos x="684" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 1">
+          <pos x="684" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="A" />
+        </textzone>
+        <textzone visibility="has_cue 1">
+          <pos x="708" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue1" />
+        </textzone>
+        <textzone visibility="not has_cue 1">
+          <pos x="688" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="A —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="765" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#12d3ff" visibility="has_cue 2">
+          <pos x="765" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 2">
+          <pos x="765" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="B" />
+        </textzone>
+        <textzone visibility="has_cue 2">
+          <pos x="789" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue2" />
+        </textzone>
+        <textzone visibility="not has_cue 2">
+          <pos x="769" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="B —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="846" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#12e95b" visibility="has_cue 3">
+          <pos x="846" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 3">
+          <pos x="846" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="C" />
+        </textzone>
+        <textzone visibility="has_cue 3">
+          <pos x="870" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue3" />
+        </textzone>
+        <textzone visibility="not has_cue 3">
+          <pos x="850" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="C —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="927" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#8d20ff" visibility="has_cue 4">
+          <pos x="927" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 4">
+          <pos x="927" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="D" />
+        </textzone>
+        <textzone visibility="has_cue 4">
+          <pos x="951" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue4" />
+        </textzone>
+        <textzone visibility="not has_cue 4">
+          <pos x="931" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="D —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="684" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#17e071" visibility="has_cue 5">
+          <pos x="684" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 5">
+          <pos x="684" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="E" />
+        </textzone>
+        <textzone visibility="has_cue 5">
+          <pos x="708" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue5" />
+        </textzone>
+        <textzone visibility="not has_cue 5">
+          <pos x="688" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="E —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="765" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#ff8224" visibility="has_cue 6">
+          <pos x="765" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 6">
+          <pos x="765" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="F" />
+        </textzone>
+        <textzone visibility="has_cue 6">
+          <pos x="789" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue6" />
+        </textzone>
+        <textzone visibility="not has_cue 6">
+          <pos x="769" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="F —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="846" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#254bff" visibility="has_cue 7">
+          <pos x="846" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 7">
+          <pos x="846" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="G" />
+        </textzone>
+        <textzone visibility="has_cue 7">
+          <pos x="870" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue7" />
+        </textzone>
+        <textzone visibility="not has_cue 7">
+          <pos x="850" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="G —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="927" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#e5ea1b" visibility="has_cue 8">
+          <pos x="927" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 8">
+          <pos x="927" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="H" />
+        </textzone>
+        <textzone visibility="has_cue 8">
+          <pos x="951" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue8" />
+        </textzone>
+        <textzone visibility="not has_cue 8">
+          <pos x="931" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="H —" />
+        </textzone>
+      </deck>
+      <deck deck="4">
+        <textzone>
+          <pos x="1014" y="600" />
+          <size width="318" height="18" />
+          <text font="Segoe UI" fontsize="12" color="#aaaaaa" align="center" text="HOT CUE / 4" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1014" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#ff334d" visibility="has_cue 1">
+          <pos x="1014" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 1">
+          <pos x="1014" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="A" />
+        </textzone>
+        <textzone visibility="has_cue 1">
+          <pos x="1038" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue1" />
+        </textzone>
+        <textzone visibility="not has_cue 1">
+          <pos x="1018" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="A —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1095" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#12d3ff" visibility="has_cue 2">
+          <pos x="1095" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 2">
+          <pos x="1095" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="B" />
+        </textzone>
+        <textzone visibility="has_cue 2">
+          <pos x="1119" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue2" />
+        </textzone>
+        <textzone visibility="not has_cue 2">
+          <pos x="1099" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="B —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1176" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#12e95b" visibility="has_cue 3">
+          <pos x="1176" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 3">
+          <pos x="1176" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="C" />
+        </textzone>
+        <textzone visibility="has_cue 3">
+          <pos x="1200" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue3" />
+        </textzone>
+        <textzone visibility="not has_cue 3">
+          <pos x="1180" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="C —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1257" y="624" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#8d20ff" visibility="has_cue 4">
+          <pos x="1257" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 4">
+          <pos x="1257" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="D" />
+        </textzone>
+        <textzone visibility="has_cue 4">
+          <pos x="1281" y="624" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue4" />
+        </textzone>
+        <textzone visibility="not has_cue 4">
+          <pos x="1261" y="624" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="D —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1014" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#17e071" visibility="has_cue 5">
+          <pos x="1014" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 5">
+          <pos x="1014" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="E" />
+        </textzone>
+        <textzone visibility="has_cue 5">
+          <pos x="1038" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue5" />
+        </textzone>
+        <textzone visibility="not has_cue 5">
+          <pos x="1018" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="E —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1095" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#ff8224" visibility="has_cue 6">
+          <pos x="1095" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 6">
+          <pos x="1095" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="F" />
+        </textzone>
+        <textzone visibility="has_cue 6">
+          <pos x="1119" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue6" />
+        </textzone>
+        <textzone visibility="not has_cue 6">
+          <pos x="1099" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="F —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1176" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#254bff" visibility="has_cue 7">
+          <pos x="1176" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 7">
+          <pos x="1176" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="G" />
+        </textzone>
+        <textzone visibility="has_cue 7">
+          <pos x="1200" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue7" />
+        </textzone>
+        <textzone visibility="not has_cue 7">
+          <pos x="1180" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="G —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1257" y="654" />
+          <size width="75" height="24" />
+        </square>
+        <square color="#e5ea1b" visibility="has_cue 8">
+          <pos x="1257" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 8">
+          <pos x="1257" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="H" />
+        </textzone>
+        <textzone visibility="has_cue 8">
+          <pos x="1281" y="654" />
+          <size width="47" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue8" />
+        </textzone>
+        <textzone visibility="not has_cue 8">
+          <pos x="1261" y="654" />
+          <size width="67" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="H —" />
+        </textzone>
       </deck>
     </panel>
     <panel name="two12" group="az-performance" visible="no">
       <deck deck="1">
-        <button action="skin_panel 'display1' on" query="skin_panel 'display1'">
-          <pos x="160" y="184" />
-          <size width="44" height="148" />
-          <off color="#10151c" border="#34495e" border_size="2" radius="0" />
-          <over color="#243647" border="#34495e" border_size="2" radius="0" />
-          <down color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <selected color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="1" />
-        </button>
-        <scratchwave orientation="horizontal" color="full">
-          <pos x="212" y="184" />
-          <size width="1132" height="148" />
-          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#dddddd" phrasecolor="#ffffff" color="#4a4a4a" transparency="0.5" mirrored="yes" background="no" />
-          <cue y="0" height="148">
-            <text dx="12" dy="0" size="14" />
-            <mask width="12" height="148" x="0" y="912" />
-          </cue>
-        </scratchwave>
-        <square color="#ffffff">
-          <pos x="777" y="184" />
-          <size width="2" height="148" />
+        <square color="#232323">
+          <pos x="24" y="194" />
+          <size width="164" height="194" />
         </square>
+        <textzone>
+          <pos x="32" y="197" />
+          <size width="148" height="23" />
+          <text font="Segoe UI" fontsize="19" color="#2394ff" align="left" text="DECK 1" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="223" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="11" color="#dddddd" align="left" action="get_filepath" />
+        </textzone>
+        <textzone visibility="not loaded">
+          <pos x="32" y="223" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" text="NO TRACK" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="242" />
+          <size width="32" height="18" />
+          <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="KEY" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="70" y="240" />
+          <size width="108" height="23" />
+          <text font="Segoe UI" fontsize="20" color="#ffffff" align="left" action="get_key 'musical'" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="270" />
+          <size width="57" height="14" />
+          <text font="Segoe UI" fontsize="10" color="#b2b2b2" align="left" text="TEMPO" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="91" y="264" />
+          <size width="87" height="23" />
+          <text font="Segoe UI" fontsize="16" color="#ffffff" align="right" format="%pitch" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="300" />
+          <size width="148" height="18" />
+          <text font="Segoe UI" fontsize="13" color="#bbbbbb" align="left" action="get_artist" />
+        </textzone>
+        <textzone visibility="quantize_loop">
+          <pos x="32" y="337" />
+          <size width="148" height="22" />
+          <text font="Segoe UI" fontsize="13" color="#ff8b45" align="left" text="Q LOOP" />
+        </textzone>
+        <textzone visibility="quantize_setcue">
+          <pos x="32" y="363" />
+          <size width="148" height="22" />
+          <text font="Segoe UI" fontsize="13" color="#ff8b45" align="left" text="Q CUE" />
+        </textzone>
+        <scratchwave orientation="horizontal" color="#1678ff" color2="#acd8ff" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+          <pos x="204" y="194" />
+          <size width="1140" height="194" />
+          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#eeeeee" phrasecolor="#ff4a4a" color="#777777" transparency="0.7" mirrored="yes" background="no" />
+          <cue y="0" height="194">
+            <text dx="12" dy="0" size="14" />
+            <mask width="12" height="194" x="0" y="912" />
+          </cue>
+          <overlay>
+            <pos x="773" y="194" />
+            <size width="2" height="194" />
+            <background x="48" y="912" />
+          </overlay>
+        </scratchwave>
         <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-          <pos x="212" y="184" />
-          <size width="1132" height="148" />
+          <pos x="204" y="194" />
+          <size width="1140" height="194" />
           <off color="transparent" />
-          <mouserect x="212" y="184" width="1132" height="148" />
+          <mouserect x="204" y="194" width="1140" height="194" />
           <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
         </button>
       </deck>
       <deck deck="2">
-        <button action="skin_panel 'display2' on" query="skin_panel 'display2'">
-          <pos x="160" y="336" />
-          <size width="44" height="148" />
-          <off color="#10151c" border="#34495e" border_size="2" radius="0" />
-          <over color="#243647" border="#34495e" border_size="2" radius="0" />
-          <down color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <selected color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="2" />
-        </button>
-        <scratchwave orientation="horizontal" color="full">
-          <pos x="212" y="336" />
-          <size width="1132" height="148" />
-          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#dddddd" phrasecolor="#ffffff" color="#4a4a4a" transparency="0.5" mirrored="yes" background="no" />
-          <cue y="0" height="148">
-            <text dx="12" dy="0" size="14" />
-            <mask width="12" height="148" x="0" y="912" />
-          </cue>
-        </scratchwave>
-        <square color="#ffffff">
-          <pos x="777" y="336" />
-          <size width="2" height="148" />
+        <square color="#232323">
+          <pos x="24" y="394" />
+          <size width="164" height="194" />
         </square>
+        <textzone>
+          <pos x="32" y="397" />
+          <size width="148" height="23" />
+          <text font="Segoe UI" fontsize="19" color="#2394ff" align="left" text="DECK 2" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="423" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="11" color="#dddddd" align="left" action="get_filepath" />
+        </textzone>
+        <textzone visibility="not loaded">
+          <pos x="32" y="423" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" text="NO TRACK" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="442" />
+          <size width="32" height="18" />
+          <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="KEY" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="70" y="440" />
+          <size width="108" height="23" />
+          <text font="Segoe UI" fontsize="20" color="#ffffff" align="left" action="get_key 'musical'" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="470" />
+          <size width="57" height="14" />
+          <text font="Segoe UI" fontsize="10" color="#b2b2b2" align="left" text="TEMPO" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="91" y="464" />
+          <size width="87" height="23" />
+          <text font="Segoe UI" fontsize="16" color="#ffffff" align="right" format="%pitch" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="500" />
+          <size width="148" height="18" />
+          <text font="Segoe UI" fontsize="13" color="#bbbbbb" align="left" action="get_artist" />
+        </textzone>
+        <textzone visibility="quantize_loop">
+          <pos x="32" y="537" />
+          <size width="148" height="22" />
+          <text font="Segoe UI" fontsize="13" color="#ff8b45" align="left" text="Q LOOP" />
+        </textzone>
+        <textzone visibility="quantize_setcue">
+          <pos x="32" y="563" />
+          <size width="148" height="22" />
+          <text font="Segoe UI" fontsize="13" color="#ff8b45" align="left" text="Q CUE" />
+        </textzone>
+        <scratchwave orientation="horizontal" color="#1678ff" color2="#acd8ff" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+          <pos x="204" y="394" />
+          <size width="1140" height="194" />
+          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#eeeeee" phrasecolor="#ff4a4a" color="#777777" transparency="0.7" mirrored="yes" background="no" />
+          <cue y="0" height="194">
+            <text dx="12" dy="0" size="14" />
+            <mask width="12" height="194" x="0" y="912" />
+          </cue>
+          <overlay>
+            <pos x="773" y="394" />
+            <size width="2" height="194" />
+            <background x="48" y="912" />
+          </overlay>
+        </scratchwave>
         <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-          <pos x="212" y="336" />
-          <size width="1132" height="148" />
+          <pos x="204" y="394" />
+          <size width="1140" height="194" />
           <off color="transparent" />
-          <mouserect x="212" y="336" width="1132" height="148" />
+          <mouserect x="204" y="394" width="1140" height="194" />
           <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
         </button>
+      </deck>
+      <deck deck="1">
+        <textzone>
+          <pos x="24" y="600" />
+          <size width="648" height="18" />
+          <text font="Segoe UI" fontsize="12" color="#aaaaaa" align="center" text="HOT CUE / 1" />
+        </textzone>
+        <square color="#232323">
+          <pos x="24" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#ff334d" visibility="has_cue 1">
+          <pos x="24" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 1">
+          <pos x="24" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="A" />
+        </textzone>
+        <textzone visibility="has_cue 1">
+          <pos x="48" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue1" />
+        </textzone>
+        <textzone visibility="not has_cue 1">
+          <pos x="28" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="A —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="187" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#12d3ff" visibility="has_cue 2">
+          <pos x="187" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 2">
+          <pos x="187" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="B" />
+        </textzone>
+        <textzone visibility="has_cue 2">
+          <pos x="211" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue2" />
+        </textzone>
+        <textzone visibility="not has_cue 2">
+          <pos x="191" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="B —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="350" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#12e95b" visibility="has_cue 3">
+          <pos x="350" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 3">
+          <pos x="350" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="C" />
+        </textzone>
+        <textzone visibility="has_cue 3">
+          <pos x="374" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue3" />
+        </textzone>
+        <textzone visibility="not has_cue 3">
+          <pos x="354" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="C —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="513" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#8d20ff" visibility="has_cue 4">
+          <pos x="513" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 4">
+          <pos x="513" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="D" />
+        </textzone>
+        <textzone visibility="has_cue 4">
+          <pos x="537" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue4" />
+        </textzone>
+        <textzone visibility="not has_cue 4">
+          <pos x="517" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="D —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="24" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#17e071" visibility="has_cue 5">
+          <pos x="24" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 5">
+          <pos x="24" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="E" />
+        </textzone>
+        <textzone visibility="has_cue 5">
+          <pos x="48" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue5" />
+        </textzone>
+        <textzone visibility="not has_cue 5">
+          <pos x="28" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="E —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="187" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#ff8224" visibility="has_cue 6">
+          <pos x="187" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 6">
+          <pos x="187" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="F" />
+        </textzone>
+        <textzone visibility="has_cue 6">
+          <pos x="211" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue6" />
+        </textzone>
+        <textzone visibility="not has_cue 6">
+          <pos x="191" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="F —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="350" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#254bff" visibility="has_cue 7">
+          <pos x="350" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 7">
+          <pos x="350" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="G" />
+        </textzone>
+        <textzone visibility="has_cue 7">
+          <pos x="374" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue7" />
+        </textzone>
+        <textzone visibility="not has_cue 7">
+          <pos x="354" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="G —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="513" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#e5ea1b" visibility="has_cue 8">
+          <pos x="513" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 8">
+          <pos x="513" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="H" />
+        </textzone>
+        <textzone visibility="has_cue 8">
+          <pos x="537" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue8" />
+        </textzone>
+        <textzone visibility="not has_cue 8">
+          <pos x="517" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="H —" />
+        </textzone>
+      </deck>
+      <deck deck="2">
+        <textzone>
+          <pos x="684" y="600" />
+          <size width="648" height="18" />
+          <text font="Segoe UI" fontsize="12" color="#aaaaaa" align="center" text="HOT CUE / 2" />
+        </textzone>
+        <square color="#232323">
+          <pos x="684" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#ff334d" visibility="has_cue 1">
+          <pos x="684" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 1">
+          <pos x="684" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="A" />
+        </textzone>
+        <textzone visibility="has_cue 1">
+          <pos x="708" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue1" />
+        </textzone>
+        <textzone visibility="not has_cue 1">
+          <pos x="688" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="A —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="847" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#12d3ff" visibility="has_cue 2">
+          <pos x="847" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 2">
+          <pos x="847" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="B" />
+        </textzone>
+        <textzone visibility="has_cue 2">
+          <pos x="871" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue2" />
+        </textzone>
+        <textzone visibility="not has_cue 2">
+          <pos x="851" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="B —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1010" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#12e95b" visibility="has_cue 3">
+          <pos x="1010" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 3">
+          <pos x="1010" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="C" />
+        </textzone>
+        <textzone visibility="has_cue 3">
+          <pos x="1034" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue3" />
+        </textzone>
+        <textzone visibility="not has_cue 3">
+          <pos x="1014" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="C —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1173" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#8d20ff" visibility="has_cue 4">
+          <pos x="1173" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 4">
+          <pos x="1173" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="D" />
+        </textzone>
+        <textzone visibility="has_cue 4">
+          <pos x="1197" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue4" />
+        </textzone>
+        <textzone visibility="not has_cue 4">
+          <pos x="1177" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="D —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="684" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#17e071" visibility="has_cue 5">
+          <pos x="684" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 5">
+          <pos x="684" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="E" />
+        </textzone>
+        <textzone visibility="has_cue 5">
+          <pos x="708" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue5" />
+        </textzone>
+        <textzone visibility="not has_cue 5">
+          <pos x="688" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="E —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="847" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#ff8224" visibility="has_cue 6">
+          <pos x="847" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 6">
+          <pos x="847" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="F" />
+        </textzone>
+        <textzone visibility="has_cue 6">
+          <pos x="871" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue6" />
+        </textzone>
+        <textzone visibility="not has_cue 6">
+          <pos x="851" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="F —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1010" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#254bff" visibility="has_cue 7">
+          <pos x="1010" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 7">
+          <pos x="1010" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="G" />
+        </textzone>
+        <textzone visibility="has_cue 7">
+          <pos x="1034" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue7" />
+        </textzone>
+        <textzone visibility="not has_cue 7">
+          <pos x="1014" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="G —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1173" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#e5ea1b" visibility="has_cue 8">
+          <pos x="1173" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 8">
+          <pos x="1173" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="H" />
+        </textzone>
+        <textzone visibility="has_cue 8">
+          <pos x="1197" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue8" />
+        </textzone>
+        <textzone visibility="not has_cue 8">
+          <pos x="1177" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="H —" />
+        </textzone>
       </deck>
     </panel>
     <panel name="two34" group="az-performance" visible="no">
       <deck deck="3">
-        <button action="skin_panel 'display3' on" query="skin_panel 'display3'">
-          <pos x="160" y="184" />
-          <size width="44" height="148" />
-          <off color="#10151c" border="#34495e" border_size="2" radius="0" />
-          <over color="#243647" border="#34495e" border_size="2" radius="0" />
-          <down color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <selected color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="3" />
-        </button>
-        <scratchwave orientation="horizontal" color="full">
-          <pos x="212" y="184" />
-          <size width="1132" height="148" />
-          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#dddddd" phrasecolor="#ffffff" color="#4a4a4a" transparency="0.5" mirrored="yes" background="no" />
-          <cue y="0" height="148">
-            <text dx="12" dy="0" size="14" />
-            <mask width="12" height="148" x="0" y="912" />
-          </cue>
-        </scratchwave>
-        <square color="#ffffff">
-          <pos x="777" y="184" />
-          <size width="2" height="148" />
+        <square color="#232323">
+          <pos x="24" y="194" />
+          <size width="164" height="194" />
         </square>
+        <textzone>
+          <pos x="32" y="197" />
+          <size width="148" height="23" />
+          <text font="Segoe UI" fontsize="19" color="#2394ff" align="left" text="DECK 3" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="223" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="11" color="#dddddd" align="left" action="get_filepath" />
+        </textzone>
+        <textzone visibility="not loaded">
+          <pos x="32" y="223" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" text="NO TRACK" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="242" />
+          <size width="32" height="18" />
+          <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="KEY" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="70" y="240" />
+          <size width="108" height="23" />
+          <text font="Segoe UI" fontsize="20" color="#ffffff" align="left" action="get_key 'musical'" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="270" />
+          <size width="57" height="14" />
+          <text font="Segoe UI" fontsize="10" color="#b2b2b2" align="left" text="TEMPO" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="91" y="264" />
+          <size width="87" height="23" />
+          <text font="Segoe UI" fontsize="16" color="#ffffff" align="right" format="%pitch" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="300" />
+          <size width="148" height="18" />
+          <text font="Segoe UI" fontsize="13" color="#bbbbbb" align="left" action="get_artist" />
+        </textzone>
+        <textzone visibility="quantize_loop">
+          <pos x="32" y="337" />
+          <size width="148" height="22" />
+          <text font="Segoe UI" fontsize="13" color="#ff8b45" align="left" text="Q LOOP" />
+        </textzone>
+        <textzone visibility="quantize_setcue">
+          <pos x="32" y="363" />
+          <size width="148" height="22" />
+          <text font="Segoe UI" fontsize="13" color="#ff8b45" align="left" text="Q CUE" />
+        </textzone>
+        <scratchwave orientation="horizontal" color="#1678ff" color2="#acd8ff" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+          <pos x="204" y="194" />
+          <size width="1140" height="194" />
+          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#eeeeee" phrasecolor="#ff4a4a" color="#777777" transparency="0.7" mirrored="yes" background="no" />
+          <cue y="0" height="194">
+            <text dx="12" dy="0" size="14" />
+            <mask width="12" height="194" x="0" y="912" />
+          </cue>
+          <overlay>
+            <pos x="773" y="194" />
+            <size width="2" height="194" />
+            <background x="48" y="912" />
+          </overlay>
+        </scratchwave>
         <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-          <pos x="212" y="184" />
-          <size width="1132" height="148" />
+          <pos x="204" y="194" />
+          <size width="1140" height="194" />
           <off color="transparent" />
-          <mouserect x="212" y="184" width="1132" height="148" />
+          <mouserect x="204" y="194" width="1140" height="194" />
           <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
         </button>
       </deck>
       <deck deck="4">
-        <button action="skin_panel 'display4' on" query="skin_panel 'display4'">
-          <pos x="160" y="336" />
-          <size width="44" height="148" />
-          <off color="#10151c" border="#34495e" border_size="2" radius="0" />
-          <over color="#243647" border="#34495e" border_size="2" radius="0" />
-          <down color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <selected color="#106d9d" border="#34495e" border_size="2" radius="0" />
-          <text font="Segoe UI" fontsize="18" color="#eef5ff" align="center" text="4" />
-        </button>
-        <scratchwave orientation="horizontal" color="full">
-          <pos x="212" y="336" />
-          <size width="1132" height="148" />
-          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#dddddd" phrasecolor="#ffffff" color="#4a4a4a" transparency="0.5" mirrored="yes" background="no" />
-          <cue y="0" height="148">
-            <text dx="12" dy="0" size="14" />
-            <mask width="12" height="148" x="0" y="912" />
-          </cue>
-        </scratchwave>
-        <square color="#ffffff">
-          <pos x="777" y="336" />
-          <size width="2" height="148" />
+        <square color="#232323">
+          <pos x="24" y="394" />
+          <size width="164" height="194" />
         </square>
+        <textzone>
+          <pos x="32" y="397" />
+          <size width="148" height="23" />
+          <text font="Segoe UI" fontsize="19" color="#2394ff" align="left" text="DECK 4" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="423" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="11" color="#dddddd" align="left" action="get_filepath" />
+        </textzone>
+        <textzone visibility="not loaded">
+          <pos x="32" y="423" />
+          <size width="148" height="17" />
+          <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" text="NO TRACK" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="442" />
+          <size width="32" height="18" />
+          <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="KEY" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="70" y="440" />
+          <size width="108" height="23" />
+          <text font="Segoe UI" fontsize="20" color="#ffffff" align="left" action="get_key 'musical'" />
+        </textzone>
+        <textzone>
+          <pos x="32" y="470" />
+          <size width="57" height="14" />
+          <text font="Segoe UI" fontsize="10" color="#b2b2b2" align="left" text="TEMPO" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="91" y="464" />
+          <size width="87" height="23" />
+          <text font="Segoe UI" fontsize="16" color="#ffffff" align="right" format="%pitch" />
+        </textzone>
+        <textzone visibility="loaded">
+          <pos x="32" y="500" />
+          <size width="148" height="18" />
+          <text font="Segoe UI" fontsize="13" color="#bbbbbb" align="left" action="get_artist" />
+        </textzone>
+        <textzone visibility="quantize_loop">
+          <pos x="32" y="537" />
+          <size width="148" height="22" />
+          <text font="Segoe UI" fontsize="13" color="#ff8b45" align="left" text="Q LOOP" />
+        </textzone>
+        <textzone visibility="quantize_setcue">
+          <pos x="32" y="563" />
+          <size width="148" height="22" />
+          <text font="Segoe UI" fontsize="13" color="#ff8b45" align="left" text="Q CUE" />
+        </textzone>
+        <scratchwave orientation="horizontal" color="#1678ff" color2="#acd8ff" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+          <pos x="204" y="394" />
+          <size width="1140" height="194" />
+          <grid mainsize="2" phrasesize="3" size="1" height="6" pos="0" maincolor="#eeeeee" phrasecolor="#ff4a4a" color="#777777" transparency="0.7" mirrored="yes" background="no" />
+          <cue y="0" height="194">
+            <text dx="12" dy="0" size="14" />
+            <mask width="12" height="194" x="0" y="912" />
+          </cue>
+          <overlay>
+            <pos x="773" y="394" />
+            <size width="2" height="194" />
+            <background x="48" y="912" />
+          </overlay>
+        </scratchwave>
         <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-          <pos x="212" y="336" />
-          <size width="1132" height="148" />
+          <pos x="204" y="394" />
+          <size width="1140" height="194" />
           <off color="transparent" />
-          <mouserect x="212" y="336" width="1132" height="148" />
+          <mouserect x="204" y="394" width="1140" height="194" />
           <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
         </button>
       </deck>
-    </panel>
-    <deck deck="1">
-      <textzone>
-        <pos x="160" y="488" />
-        <size width="282" height="20" />
-        <text font="Segoe UI" fontsize="13" color="#00a9dc" align="left" text="DECK 1" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="160" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 1">
-        <pos x="162" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 1">
-        <pos x="164" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 1" />
-      </textzone>
-      <textzone visibility="not has_cue 1">
-        <pos x="164" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="A" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="234" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 2">
-        <pos x="236" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 2">
-        <pos x="238" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 2" />
-      </textzone>
-      <textzone visibility="not has_cue 2">
-        <pos x="238" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="B" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="308" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 3">
-        <pos x="310" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 3">
-        <pos x="312" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 3" />
-      </textzone>
-      <textzone visibility="not has_cue 3">
-        <pos x="312" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="C" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="382" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 4">
-        <pos x="384" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 4">
-        <pos x="386" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 4" />
-      </textzone>
-      <textzone visibility="not has_cue 4">
-        <pos x="386" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="D" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="160" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 5">
-        <pos x="162" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 5">
-        <pos x="164" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 5" />
-      </textzone>
-      <textzone visibility="not has_cue 5">
-        <pos x="164" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="E" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="234" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 6">
-        <pos x="236" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 6">
-        <pos x="238" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 6" />
-      </textzone>
-      <textzone visibility="not has_cue 6">
-        <pos x="238" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="F" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="308" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 7">
-        <pos x="310" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 7">
-        <pos x="312" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 7" />
-      </textzone>
-      <textzone visibility="not has_cue 7">
-        <pos x="312" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="G" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="382" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 8">
-        <pos x="384" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 8">
-        <pos x="386" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 8" />
-      </textzone>
-      <textzone visibility="not has_cue 8">
-        <pos x="386" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="H" />
-      </textzone>
-    </deck>
-    <deck deck="2">
-      <textzone>
-        <pos x="460" y="488" />
-        <size width="282" height="20" />
-        <text font="Segoe UI" fontsize="13" color="#00a9dc" align="left" text="DECK 2" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="460" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 1">
-        <pos x="462" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 1">
-        <pos x="464" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 1" />
-      </textzone>
-      <textzone visibility="not has_cue 1">
-        <pos x="464" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="A" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="534" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 2">
-        <pos x="536" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 2">
-        <pos x="538" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 2" />
-      </textzone>
-      <textzone visibility="not has_cue 2">
-        <pos x="538" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="B" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="608" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 3">
-        <pos x="610" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 3">
-        <pos x="612" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 3" />
-      </textzone>
-      <textzone visibility="not has_cue 3">
-        <pos x="612" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="C" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="682" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 4">
-        <pos x="684" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 4">
-        <pos x="686" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 4" />
-      </textzone>
-      <textzone visibility="not has_cue 4">
-        <pos x="686" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="D" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="460" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 5">
-        <pos x="462" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 5">
-        <pos x="464" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 5" />
-      </textzone>
-      <textzone visibility="not has_cue 5">
-        <pos x="464" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="E" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="534" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 6">
-        <pos x="536" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 6">
-        <pos x="538" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 6" />
-      </textzone>
-      <textzone visibility="not has_cue 6">
-        <pos x="538" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="F" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="608" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 7">
-        <pos x="610" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 7">
-        <pos x="612" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 7" />
-      </textzone>
-      <textzone visibility="not has_cue 7">
-        <pos x="612" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="G" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="682" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 8">
-        <pos x="684" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 8">
-        <pos x="686" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 8" />
-      </textzone>
-      <textzone visibility="not has_cue 8">
-        <pos x="686" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="H" />
-      </textzone>
-    </deck>
-    <deck deck="3">
-      <textzone>
-        <pos x="760" y="488" />
-        <size width="282" height="20" />
-        <text font="Segoe UI" fontsize="13" color="#00a9dc" align="left" text="DECK 3" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="760" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 1">
-        <pos x="762" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 1">
-        <pos x="764" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 1" />
-      </textzone>
-      <textzone visibility="not has_cue 1">
-        <pos x="764" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="A" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="834" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 2">
-        <pos x="836" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 2">
-        <pos x="838" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 2" />
-      </textzone>
-      <textzone visibility="not has_cue 2">
-        <pos x="838" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="B" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="908" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 3">
-        <pos x="910" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 3">
-        <pos x="912" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 3" />
-      </textzone>
-      <textzone visibility="not has_cue 3">
-        <pos x="912" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="C" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="982" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 4">
-        <pos x="984" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 4">
-        <pos x="986" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 4" />
-      </textzone>
-      <textzone visibility="not has_cue 4">
-        <pos x="986" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="D" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="760" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 5">
-        <pos x="762" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 5">
-        <pos x="764" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 5" />
-      </textzone>
-      <textzone visibility="not has_cue 5">
-        <pos x="764" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="E" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="834" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 6">
-        <pos x="836" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 6">
-        <pos x="838" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 6" />
-      </textzone>
-      <textzone visibility="not has_cue 6">
-        <pos x="838" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="F" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="908" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 7">
-        <pos x="910" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 7">
-        <pos x="912" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 7" />
-      </textzone>
-      <textzone visibility="not has_cue 7">
-        <pos x="912" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="G" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="982" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 8">
-        <pos x="984" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 8">
-        <pos x="986" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 8" />
-      </textzone>
-      <textzone visibility="not has_cue 8">
-        <pos x="986" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="H" />
-      </textzone>
-    </deck>
-    <deck deck="4">
-      <textzone>
-        <pos x="1060" y="488" />
-        <size width="282" height="20" />
-        <text font="Segoe UI" fontsize="13" color="#00a9dc" align="left" text="DECK 4" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="1060" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 1">
-        <pos x="1062" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 1">
-        <pos x="1064" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 1" />
-      </textzone>
-      <textzone visibility="not has_cue 1">
-        <pos x="1064" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="A" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="1134" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 2">
-        <pos x="1136" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 2">
-        <pos x="1138" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 2" />
-      </textzone>
-      <textzone visibility="not has_cue 2">
-        <pos x="1138" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="B" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="1208" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 3">
-        <pos x="1210" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 3">
-        <pos x="1212" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 3" />
-      </textzone>
-      <textzone visibility="not has_cue 3">
-        <pos x="1212" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="C" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="1282" y="512" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 4">
-        <pos x="1284" y="514" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 4">
-        <pos x="1286" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 4" />
-      </textzone>
-      <textzone visibility="not has_cue 4">
-        <pos x="1286" y="519" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="D" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="1060" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 5">
-        <pos x="1062" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 5">
-        <pos x="1064" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 5" />
-      </textzone>
-      <textzone visibility="not has_cue 5">
-        <pos x="1064" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="E" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="1134" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 6">
-        <pos x="1136" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 6">
-        <pos x="1138" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 6" />
-      </textzone>
-      <textzone visibility="not has_cue 6">
-        <pos x="1138" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="F" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="1208" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 7">
-        <pos x="1210" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 7">
-        <pos x="1212" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 7" />
-      </textzone>
-      <textzone visibility="not has_cue 7">
-        <pos x="1212" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="G" />
-      </textzone>
-      <square color="#11161d" border="2" border_color="#34495e">
-        <pos x="1282" y="556" />
-        <size width="68" height="38" />
-      </square>
-      <square color="#00a9dc" visibility="has_cue 8">
-        <pos x="1284" y="558" />
-        <size width="64" height="3" />
-      </square>
-      <textzone visibility="has_cue 8">
-        <pos x="1286" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#f6f6f6" align="center" action="cue_display 8" />
-      </textzone>
-      <textzone visibility="not has_cue 8">
-        <pos x="1286" y="563" />
-        <size width="60" height="25" />
-        <text font="Segoe UI" fontsize="14" color="#3e4f60" align="center" text="H" />
-      </textzone>
-    </deck>
-    <deck deck="1">
-      <square color="#11161d">
-        <pos x="24" y="606" />
-        <size width="654" height="116" />
-      </square>
-      <textzone>
-        <pos x="34" y="611" />
-        <size width="36" height="38" />
-        <text font="Segoe UI" fontsize="30" color="#00a9dc" align="left" text="1" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="80" y="613" />
-        <size width="496" height="27" />
-        <text font="Segoe UI" fontsize="21" color="#eef5ff" align="left" action="get_title" />
-      </textzone>
-      <textzone visibility="not loaded">
-        <pos x="80" y="613" />
-        <size width="496" height="27" />
-        <text font="Segoe UI" fontsize="21" color="#91a1af" align="left" text="NO TRACK LOADED" />
-      </textzone>
-      <textzone visibility="play">
-        <pos x="579" y="613" />
-        <size width="84" height="22" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="PLAYING" />
-      </textzone>
-      <textzone visibility="display_time 'remain'">
-        <pos x="80" y="642" />
-        <size width="125" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="REMAIN" />
-      </textzone>
-      <textzone visibility="not display_time 'remain'">
-        <pos x="80" y="642" />
-        <size width="125" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="ELAPSED" />
-      </textzone>
-      <button action="display_time 'remain' ? display_time 'elapsed' : display_time 'remain'" query="false">
-        <pos x="78" y="654" />
-        <size width="142" height="52" />
-        <off color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <over color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <down color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <selected color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <text font="Segoe UI" fontsize="30" color="#eef5ff" align="left" action="get_time 'short'" />
-      </button>
-      <textzone>
-        <pos x="234" y="642" />
-        <size width="100" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#fa834a" align="left" text="BPM" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="234" y="658" />
-        <size width="110" height="40" />
-        <text font="Segoe UI" fontsize="30" color="#ff7b48" align="left" action="get_bpm" />
-      </textzone>
-      <textzone>
-        <pos x="354" y="642" />
-        <size width="100" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="KEY" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="354" y="658" />
-        <size width="100" height="40" />
-        <text font="Segoe UI" fontsize="30" color="#00d2a0" align="left" action="get_key 'harmonic'" />
-      </textzone>
-      <textzone>
-        <pos x="459" y="642" />
-        <size width="110" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="TEMPO" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="459" y="658" />
-        <size width="110" height="40" />
-        <text font="Segoe UI" fontsize="26" color="#c0ccda" align="left" format="%pitch" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="80" y="707" />
-        <size width="490" height="13" />
-        <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" action="get_artist" />
-      </textzone>
-      <textzone visibility="loop">
-        <pos x="579" y="647" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="LOOP" />
-      </textzone>
-      <textzone visibility="quantize_loop">
-        <pos x="579" y="669" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="Q LOOP" />
-      </textzone>
-      <textzone visibility="quantize_setcue">
-        <pos x="579" y="691" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="Q CUE" />
-      </textzone>
-      <songpos orientation="horizontal" colorPlayed="#535353" colorBass="#ed7054" colorMed="#66e499" colorHigh="#c8b1ff">
-        <pos x="24" y="722" />
-        <size width="654" height="30" />
-        <cues>
-          <size width="8" height="20" />
-          <up x="24" y="912" />
-          <down x="24" y="912" />
-          <over x="24" y="912" />
-        </cues>
-      </songpos>
-      <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-        <pos x="24" y="722" />
-        <size width="654" height="30" />
-        <off color="transparent" />
-        <mouserect x="24" y="722" width="654" height="30" />
-        <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
-      </button>
-    </deck>
-    <deck deck="2">
-      <square color="#11161d">
-        <pos x="690" y="606" />
-        <size width="654" height="116" />
-      </square>
-      <textzone>
-        <pos x="700" y="611" />
-        <size width="36" height="38" />
-        <text font="Segoe UI" fontsize="30" color="#00a9dc" align="left" text="2" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="746" y="613" />
-        <size width="496" height="27" />
-        <text font="Segoe UI" fontsize="21" color="#eef5ff" align="left" action="get_title" />
-      </textzone>
-      <textzone visibility="not loaded">
-        <pos x="746" y="613" />
-        <size width="496" height="27" />
-        <text font="Segoe UI" fontsize="21" color="#91a1af" align="left" text="NO TRACK LOADED" />
-      </textzone>
-      <textzone visibility="play">
-        <pos x="1245" y="613" />
-        <size width="84" height="22" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="PLAYING" />
-      </textzone>
-      <textzone visibility="display_time 'remain'">
-        <pos x="746" y="642" />
-        <size width="125" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="REMAIN" />
-      </textzone>
-      <textzone visibility="not display_time 'remain'">
-        <pos x="746" y="642" />
-        <size width="125" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="ELAPSED" />
-      </textzone>
-      <button action="display_time 'remain' ? display_time 'elapsed' : display_time 'remain'" query="false">
-        <pos x="744" y="654" />
-        <size width="142" height="52" />
-        <off color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <over color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <down color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <selected color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <text font="Segoe UI" fontsize="30" color="#eef5ff" align="left" action="get_time 'short'" />
-      </button>
-      <textzone>
-        <pos x="900" y="642" />
-        <size width="100" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#fa834a" align="left" text="BPM" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="900" y="658" />
-        <size width="110" height="40" />
-        <text font="Segoe UI" fontsize="30" color="#ff7b48" align="left" action="get_bpm" />
-      </textzone>
-      <textzone>
-        <pos x="1020" y="642" />
-        <size width="100" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="KEY" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="1020" y="658" />
-        <size width="100" height="40" />
-        <text font="Segoe UI" fontsize="30" color="#00d2a0" align="left" action="get_key 'harmonic'" />
-      </textzone>
-      <textzone>
-        <pos x="1125" y="642" />
-        <size width="110" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="TEMPO" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="1125" y="658" />
-        <size width="110" height="40" />
-        <text font="Segoe UI" fontsize="26" color="#c0ccda" align="left" format="%pitch" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="746" y="707" />
-        <size width="490" height="13" />
-        <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" action="get_artist" />
-      </textzone>
-      <textzone visibility="loop">
-        <pos x="1245" y="647" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="LOOP" />
-      </textzone>
-      <textzone visibility="quantize_loop">
-        <pos x="1245" y="669" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="Q LOOP" />
-      </textzone>
-      <textzone visibility="quantize_setcue">
-        <pos x="1245" y="691" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="Q CUE" />
-      </textzone>
-      <songpos orientation="horizontal" colorPlayed="#535353" colorBass="#ed7054" colorMed="#66e499" colorHigh="#c8b1ff">
-        <pos x="690" y="722" />
-        <size width="654" height="30" />
-        <cues>
-          <size width="8" height="20" />
-          <up x="24" y="912" />
-          <down x="24" y="912" />
-          <over x="24" y="912" />
-        </cues>
-      </songpos>
-      <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-        <pos x="690" y="722" />
-        <size width="654" height="30" />
-        <off color="transparent" />
-        <mouserect x="690" y="722" width="654" height="30" />
-        <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
-      </button>
-    </deck>
-    <deck deck="3">
-      <square color="#11161d">
-        <pos x="24" y="756" />
-        <size width="654" height="116" />
-      </square>
-      <textzone>
-        <pos x="34" y="761" />
-        <size width="36" height="38" />
-        <text font="Segoe UI" fontsize="30" color="#00a9dc" align="left" text="3" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="80" y="763" />
-        <size width="496" height="27" />
-        <text font="Segoe UI" fontsize="21" color="#eef5ff" align="left" action="get_title" />
-      </textzone>
-      <textzone visibility="not loaded">
-        <pos x="80" y="763" />
-        <size width="496" height="27" />
-        <text font="Segoe UI" fontsize="21" color="#91a1af" align="left" text="NO TRACK LOADED" />
-      </textzone>
-      <textzone visibility="play">
-        <pos x="579" y="763" />
-        <size width="84" height="22" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="PLAYING" />
-      </textzone>
-      <textzone visibility="display_time 'remain'">
-        <pos x="80" y="792" />
-        <size width="125" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="REMAIN" />
-      </textzone>
-      <textzone visibility="not display_time 'remain'">
-        <pos x="80" y="792" />
-        <size width="125" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="ELAPSED" />
-      </textzone>
-      <button action="display_time 'remain' ? display_time 'elapsed' : display_time 'remain'" query="false">
-        <pos x="78" y="804" />
-        <size width="142" height="52" />
-        <off color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <over color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <down color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <selected color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <text font="Segoe UI" fontsize="30" color="#eef5ff" align="left" action="get_time 'short'" />
-      </button>
-      <textzone>
-        <pos x="234" y="792" />
-        <size width="100" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#fa834a" align="left" text="BPM" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="234" y="808" />
-        <size width="110" height="40" />
-        <text font="Segoe UI" fontsize="30" color="#ff7b48" align="left" action="get_bpm" />
-      </textzone>
-      <textzone>
-        <pos x="354" y="792" />
-        <size width="100" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="KEY" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="354" y="808" />
-        <size width="100" height="40" />
-        <text font="Segoe UI" fontsize="30" color="#00d2a0" align="left" action="get_key 'harmonic'" />
-      </textzone>
-      <textzone>
-        <pos x="459" y="792" />
-        <size width="110" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="TEMPO" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="459" y="808" />
-        <size width="110" height="40" />
-        <text font="Segoe UI" fontsize="26" color="#c0ccda" align="left" format="%pitch" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="80" y="857" />
-        <size width="490" height="13" />
-        <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" action="get_artist" />
-      </textzone>
-      <textzone visibility="loop">
-        <pos x="579" y="797" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="LOOP" />
-      </textzone>
-      <textzone visibility="quantize_loop">
-        <pos x="579" y="819" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="Q LOOP" />
-      </textzone>
-      <textzone visibility="quantize_setcue">
-        <pos x="579" y="841" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="Q CUE" />
-      </textzone>
-      <songpos orientation="horizontal" colorPlayed="#535353" colorBass="#ed7054" colorMed="#66e499" colorHigh="#c8b1ff">
-        <pos x="24" y="872" />
-        <size width="654" height="30" />
-        <cues>
-          <size width="8" height="20" />
-          <up x="24" y="912" />
-          <down x="24" y="912" />
-          <over x="24" y="912" />
-        </cues>
-      </songpos>
-      <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-        <pos x="24" y="872" />
-        <size width="654" height="30" />
-        <off color="transparent" />
-        <mouserect x="24" y="872" width="654" height="30" />
-        <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
-      </button>
-    </deck>
-    <deck deck="4">
-      <square color="#11161d">
-        <pos x="690" y="756" />
-        <size width="654" height="116" />
-      </square>
-      <textzone>
-        <pos x="700" y="761" />
-        <size width="36" height="38" />
-        <text font="Segoe UI" fontsize="30" color="#00a9dc" align="left" text="4" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="746" y="763" />
-        <size width="496" height="27" />
-        <text font="Segoe UI" fontsize="21" color="#eef5ff" align="left" action="get_title" />
-      </textzone>
-      <textzone visibility="not loaded">
-        <pos x="746" y="763" />
-        <size width="496" height="27" />
-        <text font="Segoe UI" fontsize="21" color="#91a1af" align="left" text="NO TRACK LOADED" />
-      </textzone>
-      <textzone visibility="play">
-        <pos x="1245" y="763" />
-        <size width="84" height="22" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="PLAYING" />
-      </textzone>
-      <textzone visibility="display_time 'remain'">
-        <pos x="746" y="792" />
-        <size width="125" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="REMAIN" />
-      </textzone>
-      <textzone visibility="not display_time 'remain'">
-        <pos x="746" y="792" />
-        <size width="125" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="ELAPSED" />
-      </textzone>
-      <button action="display_time 'remain' ? display_time 'elapsed' : display_time 'remain'" query="false">
-        <pos x="744" y="804" />
-        <size width="142" height="52" />
-        <off color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <over color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <down color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <selected color="#11161d" border="#34495e" border_size="0" radius="0" />
-        <text font="Segoe UI" fontsize="30" color="#eef5ff" align="left" action="get_time 'short'" />
-      </button>
-      <textzone>
-        <pos x="900" y="792" />
-        <size width="100" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#fa834a" align="left" text="BPM" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="900" y="808" />
-        <size width="110" height="40" />
-        <text font="Segoe UI" fontsize="30" color="#ff7b48" align="left" action="get_bpm" />
-      </textzone>
-      <textzone>
-        <pos x="1020" y="792" />
-        <size width="100" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="KEY" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="1020" y="808" />
-        <size width="100" height="40" />
-        <text font="Segoe UI" fontsize="30" color="#00d2a0" align="left" action="get_key 'harmonic'" />
-      </textzone>
-      <textzone>
-        <pos x="1125" y="792" />
-        <size width="110" height="16" />
-        <text font="Segoe UI" fontsize="12" color="#7f8d9b" align="left" text="TEMPO" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="1125" y="808" />
-        <size width="110" height="40" />
-        <text font="Segoe UI" fontsize="26" color="#c0ccda" align="left" format="%pitch" />
-      </textzone>
-      <textzone visibility="loaded">
-        <pos x="746" y="857" />
-        <size width="490" height="13" />
-        <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" action="get_artist" />
-      </textzone>
-      <textzone visibility="loop">
-        <pos x="1245" y="797" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="LOOP" />
-      </textzone>
-      <textzone visibility="quantize_loop">
-        <pos x="1245" y="819" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="Q LOOP" />
-      </textzone>
-      <textzone visibility="quantize_setcue">
-        <pos x="1245" y="841" />
-        <size width="84" height="18" />
-        <text font="Segoe UI" fontsize="12" color="#00a9dc" align="right" text="Q CUE" />
-      </textzone>
-      <songpos orientation="horizontal" colorPlayed="#535353" colorBass="#ed7054" colorMed="#66e499" colorHigh="#c8b1ff">
-        <pos x="690" y="872" />
-        <size width="654" height="30" />
-        <cues>
-          <size width="8" height="20" />
-          <up x="24" y="912" />
-          <down x="24" y="912" />
-          <over x="24" y="912" />
-        </cues>
-      </songpos>
-      <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
-        <pos x="690" y="872" />
-        <size width="654" height="30" />
-        <off color="transparent" />
-        <mouserect x="690" y="872" width="654" height="30" />
-        <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
-      </button>
-    </deck>
-    <panel name="display1" group="az-display" visible="yes">
-      <deck deck="1">
-        <textzone>
-          <pos x="24" y="180" />
-          <size width="124" height="32" />
-          <text font="Segoe UI" fontsize="24" color="#00a9dc" align="left" text="DECK 1" />
-        </textzone>
-        <textzone>
-          <pos x="24" y="225" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="BPM" />
-        </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="249" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="30" color="#ff7b48" align="left" action="get_bpm" />
-        </textzone>
-        <textzone>
-          <pos x="24" y="298" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="KEY" />
-        </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="322" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="30" color="#00d2a0" align="left" action="get_key 'harmonic'" />
-        </textzone>
-        <textzone>
-          <pos x="24" y="372" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="TEMPO" />
-        </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="396" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="28" color="#eef4fa" align="left" format="%pitch" />
-        </textzone>
-        <textzone>
-          <pos x="24" y="460" />
-          <size width="124" height="23" />
-          <text font="Segoe UI" fontsize="13" color="#fa834a" align="left" text="TOUCH LOCK" />
-        </textzone>
-      </deck>
-    </panel>
-    <panel name="display2" group="az-display" visible="no">
-      <deck deck="2">
-        <textzone>
-          <pos x="24" y="180" />
-          <size width="124" height="32" />
-          <text font="Segoe UI" fontsize="24" color="#00a9dc" align="left" text="DECK 2" />
-        </textzone>
-        <textzone>
-          <pos x="24" y="225" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="BPM" />
-        </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="249" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="30" color="#ff7b48" align="left" action="get_bpm" />
-        </textzone>
-        <textzone>
-          <pos x="24" y="298" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="KEY" />
-        </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="322" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="30" color="#00d2a0" align="left" action="get_key 'harmonic'" />
-        </textzone>
-        <textzone>
-          <pos x="24" y="372" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="TEMPO" />
-        </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="396" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="28" color="#eef4fa" align="left" format="%pitch" />
-        </textzone>
-        <textzone>
-          <pos x="24" y="460" />
-          <size width="124" height="23" />
-          <text font="Segoe UI" fontsize="13" color="#fa834a" align="left" text="TOUCH LOCK" />
-        </textzone>
-      </deck>
-    </panel>
-    <panel name="display3" group="az-display" visible="no">
       <deck deck="3">
         <textzone>
-          <pos x="24" y="180" />
-          <size width="124" height="32" />
-          <text font="Segoe UI" fontsize="24" color="#00a9dc" align="left" text="DECK 3" />
+          <pos x="24" y="600" />
+          <size width="648" height="18" />
+          <text font="Segoe UI" fontsize="12" color="#aaaaaa" align="center" text="HOT CUE / 3" />
         </textzone>
-        <textzone>
-          <pos x="24" y="225" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="BPM" />
+        <square color="#232323">
+          <pos x="24" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#ff334d" visibility="has_cue 1">
+          <pos x="24" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 1">
+          <pos x="24" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="A" />
         </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="249" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="30" color="#ff7b48" align="left" action="get_bpm" />
+        <textzone visibility="has_cue 1">
+          <pos x="48" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue1" />
         </textzone>
-        <textzone>
-          <pos x="24" y="298" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="KEY" />
+        <textzone visibility="not has_cue 1">
+          <pos x="28" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="A —" />
         </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="322" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="30" color="#00d2a0" align="left" action="get_key 'harmonic'" />
+        <square color="#232323">
+          <pos x="187" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#12d3ff" visibility="has_cue 2">
+          <pos x="187" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 2">
+          <pos x="187" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="B" />
         </textzone>
-        <textzone>
-          <pos x="24" y="372" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="TEMPO" />
+        <textzone visibility="has_cue 2">
+          <pos x="211" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue2" />
         </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="396" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="28" color="#eef4fa" align="left" format="%pitch" />
+        <textzone visibility="not has_cue 2">
+          <pos x="191" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="B —" />
         </textzone>
-        <textzone>
-          <pos x="24" y="460" />
-          <size width="124" height="23" />
-          <text font="Segoe UI" fontsize="13" color="#fa834a" align="left" text="TOUCH LOCK" />
+        <square color="#232323">
+          <pos x="350" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#12e95b" visibility="has_cue 3">
+          <pos x="350" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 3">
+          <pos x="350" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="C" />
+        </textzone>
+        <textzone visibility="has_cue 3">
+          <pos x="374" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue3" />
+        </textzone>
+        <textzone visibility="not has_cue 3">
+          <pos x="354" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="C —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="513" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#8d20ff" visibility="has_cue 4">
+          <pos x="513" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 4">
+          <pos x="513" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="D" />
+        </textzone>
+        <textzone visibility="has_cue 4">
+          <pos x="537" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue4" />
+        </textzone>
+        <textzone visibility="not has_cue 4">
+          <pos x="517" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="D —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="24" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#17e071" visibility="has_cue 5">
+          <pos x="24" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 5">
+          <pos x="24" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="E" />
+        </textzone>
+        <textzone visibility="has_cue 5">
+          <pos x="48" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue5" />
+        </textzone>
+        <textzone visibility="not has_cue 5">
+          <pos x="28" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="E —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="187" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#ff8224" visibility="has_cue 6">
+          <pos x="187" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 6">
+          <pos x="187" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="F" />
+        </textzone>
+        <textzone visibility="has_cue 6">
+          <pos x="211" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue6" />
+        </textzone>
+        <textzone visibility="not has_cue 6">
+          <pos x="191" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="F —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="350" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#254bff" visibility="has_cue 7">
+          <pos x="350" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 7">
+          <pos x="350" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="G" />
+        </textzone>
+        <textzone visibility="has_cue 7">
+          <pos x="374" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue7" />
+        </textzone>
+        <textzone visibility="not has_cue 7">
+          <pos x="354" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="G —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="513" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#e5ea1b" visibility="has_cue 8">
+          <pos x="513" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 8">
+          <pos x="513" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="H" />
+        </textzone>
+        <textzone visibility="has_cue 8">
+          <pos x="537" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue8" />
+        </textzone>
+        <textzone visibility="not has_cue 8">
+          <pos x="517" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="H —" />
         </textzone>
       </deck>
-    </panel>
-    <panel name="display4" group="az-display" visible="no">
       <deck deck="4">
         <textzone>
-          <pos x="24" y="180" />
-          <size width="124" height="32" />
-          <text font="Segoe UI" fontsize="24" color="#00a9dc" align="left" text="DECK 4" />
+          <pos x="684" y="600" />
+          <size width="648" height="18" />
+          <text font="Segoe UI" fontsize="12" color="#aaaaaa" align="center" text="HOT CUE / 4" />
         </textzone>
-        <textzone>
-          <pos x="24" y="225" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="BPM" />
+        <square color="#232323">
+          <pos x="684" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#ff334d" visibility="has_cue 1">
+          <pos x="684" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 1">
+          <pos x="684" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="A" />
         </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="249" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="30" color="#ff7b48" align="left" action="get_bpm" />
+        <textzone visibility="has_cue 1">
+          <pos x="708" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue1" />
         </textzone>
-        <textzone>
-          <pos x="24" y="298" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="KEY" />
+        <textzone visibility="not has_cue 1">
+          <pos x="688" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="A —" />
         </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="322" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="30" color="#00d2a0" align="left" action="get_key 'harmonic'" />
+        <square color="#232323">
+          <pos x="847" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#12d3ff" visibility="has_cue 2">
+          <pos x="847" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 2">
+          <pos x="847" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="B" />
         </textzone>
-        <textzone>
-          <pos x="24" y="372" />
-          <size width="124" height="20" />
-          <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" text="TEMPO" />
+        <textzone visibility="has_cue 2">
+          <pos x="871" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue2" />
         </textzone>
-        <textzone visibility="loaded">
-          <pos x="24" y="396" />
-          <size width="124" height="34" />
-          <text font="Segoe UI" fontsize="28" color="#eef4fa" align="left" format="%pitch" />
+        <textzone visibility="not has_cue 2">
+          <pos x="851" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="B —" />
         </textzone>
-        <textzone>
-          <pos x="24" y="460" />
-          <size width="124" height="23" />
-          <text font="Segoe UI" fontsize="13" color="#fa834a" align="left" text="TOUCH LOCK" />
+        <square color="#232323">
+          <pos x="1010" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#12e95b" visibility="has_cue 3">
+          <pos x="1010" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 3">
+          <pos x="1010" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="C" />
+        </textzone>
+        <textzone visibility="has_cue 3">
+          <pos x="1034" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue3" />
+        </textzone>
+        <textzone visibility="not has_cue 3">
+          <pos x="1014" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="C —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1173" y="624" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#8d20ff" visibility="has_cue 4">
+          <pos x="1173" y="624" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 4">
+          <pos x="1173" y="624" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="D" />
+        </textzone>
+        <textzone visibility="has_cue 4">
+          <pos x="1197" y="624" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue4" />
+        </textzone>
+        <textzone visibility="not has_cue 4">
+          <pos x="1177" y="624" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="D —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="684" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#17e071" visibility="has_cue 5">
+          <pos x="684" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 5">
+          <pos x="684" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="E" />
+        </textzone>
+        <textzone visibility="has_cue 5">
+          <pos x="708" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue5" />
+        </textzone>
+        <textzone visibility="not has_cue 5">
+          <pos x="688" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="E —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="847" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#ff8224" visibility="has_cue 6">
+          <pos x="847" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 6">
+          <pos x="847" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="F" />
+        </textzone>
+        <textzone visibility="has_cue 6">
+          <pos x="871" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue6" />
+        </textzone>
+        <textzone visibility="not has_cue 6">
+          <pos x="851" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="F —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1010" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#254bff" visibility="has_cue 7">
+          <pos x="1010" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 7">
+          <pos x="1010" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="G" />
+        </textzone>
+        <textzone visibility="has_cue 7">
+          <pos x="1034" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue7" />
+        </textzone>
+        <textzone visibility="not has_cue 7">
+          <pos x="1014" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="G —" />
+        </textzone>
+        <square color="#232323">
+          <pos x="1173" y="654" />
+          <size width="157" height="24" />
+        </square>
+        <square color="#e5ea1b" visibility="has_cue 8">
+          <pos x="1173" y="654" />
+          <size width="18" height="24" />
+        </square>
+        <textzone visibility="has_cue 8">
+          <pos x="1173" y="654" />
+          <size width="18" height="24" />
+          <text font="Segoe UI" fontsize="14" color="#0a0a0a" align="center" text="H" />
+        </textzone>
+        <textzone visibility="has_cue 8">
+          <pos x="1197" y="654" />
+          <size width="129" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#f4f4f4" align="left" format="%namecue8" />
+        </textzone>
+        <textzone visibility="not has_cue 8">
+          <pos x="1177" y="654" />
+          <size width="149" height="24" />
+          <text font="Segoe UI" fontsize="13" color="#ababab" align="left" text="H —" />
         </textzone>
       </deck>
     </panel>
-    <textzone>
-      <pos x="812" y="139" />
-      <size width="532" height="30" />
-      <text font="Segoe UI" fontsize="13" color="#7f8d9b" align="left" action="get_browsed_folder_path" />
-    </textzone>
+    <deck deck="1">
+      <square color="#101010" border="1" border_color="#bbbbbb">
+        <pos x="24" y="702" />
+        <size width="654" height="100" />
+      </square>
+      <square color="#242424">
+        <pos x="24" y="702" />
+        <size width="654" height="28" />
+      </square>
+      <square color="#1678dd">
+        <pos x="24" y="702" />
+        <size width="46" height="28" />
+      </square>
+      <textzone>
+        <pos x="24" y="703" />
+        <size width="46" height="26" />
+        <text font="Segoe UI" fontsize="23" color="#080808" align="center" text="1" />
+      </textzone>
+      <textzone visibility="loaded">
+        <pos x="80" y="704" />
+        <size width="492" height="24" />
+        <text font="Segoe UI" fontsize="18" color="#eef5ff" align="left" action="get_title" scroll="yes" />
+      </textzone>
+      <textzone visibility="not loaded">
+        <pos x="80" y="704" />
+        <size width="492" height="24" />
+        <text font="Segoe UI" fontsize="18" color="#b2b2b2" align="left" text="NO TRACK LOADED" />
+      </textzone>
+      <square color="#e2721a" visibility="masterdeck">
+        <pos x="579" y="702" />
+        <size width="99" height="28" />
+      </square>
+      <textzone visibility="masterdeck">
+        <pos x="579" y="702" />
+        <size width="99" height="28" />
+        <text font="Segoe UI" fontsize="14" color="#111111" align="center" text="MASTER" />
+      </textzone>
+      <textzone visibility="display_time 'remain'">
+        <pos x="30" y="734" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="REMAIN / TIME" />
+      </textzone>
+      <textzone visibility="display_time 'elapsed'">
+        <pos x="30" y="734" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="ELAPSED / TIME" />
+      </textzone>
+      <textzone visibility="display_time 'total'">
+        <pos x="30" y="734" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="TOTAL / TIME" />
+      </textzone>
+      <button action="display_time 'remain' ? display_time 'elapsed' : display_time 'remain'" query="false">
+        <pos x="30" y="747" />
+        <size width="130" height="52" />
+        <off color="#101010" border="#34495e" border_size="0" radius="0" />
+        <over color="#101010" border="#34495e" border_size="0" radius="0" />
+        <down color="#101010" border="#34495e" border_size="0" radius="0" />
+        <selected color="#101010" border="#34495e" border_size="0" radius="0" />
+        <text font="Segoe UI" fontsize="30" color="#eef5ff" align="left" action="get_time 'short'" />
+      </button>
+      <textzone>
+        <pos x="589" y="733" />
+        <size width="80" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="BPM" />
+      </textzone>
+      <textzone visibility="loaded &amp; not masterdeck">
+        <pos x="582" y="746" />
+        <size width="96" height="36" />
+        <text font="Segoe UI" fontsize="24" color="#ffffff" align="left" action="get_bpm" />
+      </textzone>
+      <textzone visibility="loaded &amp; masterdeck">
+        <pos x="582" y="746" />
+        <size width="96" height="36" />
+        <text font="Segoe UI" fontsize="24" color="#ff9844" align="left" action="get_bpm" />
+      </textzone>
+      <textzone visibility="loaded">
+        <pos x="589" y="782" />
+        <size width="80" height="16" />
+        <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" format="%pitch" />
+      </textzone>
+      <textzone visibility="play">
+        <pos x="170" y="733" />
+        <size width="100" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff533f" align="left" text="PLAYING" />
+      </textzone>
+      <textzone visibility="loaded &amp; is_sync">
+        <pos x="275" y="733" />
+        <size width="100" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#53efaa" align="left" text="SYNC" />
+      </textzone>
+      <textzone visibility="loop">
+        <pos x="378" y="733" />
+        <size width="86" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff9844" align="left" text="LOOP" />
+      </textzone>
+      <textzone visibility="quantize_setcue">
+        <pos x="465" y="733" />
+        <size width="106" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff9844" align="left" text="Q" />
+      </textzone>
+      <songpos orientation="horizontal" colorPlayed="#303030" colorBass="#1678ff" colorMed="#f6a21a" colorHigh="#f7f1dd" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+        <pos x="170" y="754" />
+        <size width="401" height="40" />
+        <cues>
+          <size width="8" height="20" />
+          <up x="24" y="912" />
+          <down x="24" y="912" />
+          <over x="24" y="912" />
+        </cues>
+      </songpos>
+      <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
+        <pos x="170" y="754" />
+        <size width="401" height="40" />
+        <off color="transparent" />
+        <mouserect x="170" y="754" width="401" height="40" />
+        <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
+      </button>
+    </deck>
+    <deck deck="2">
+      <square color="#101010" border="1" border_color="#bbbbbb">
+        <pos x="690" y="702" />
+        <size width="654" height="100" />
+      </square>
+      <square color="#242424">
+        <pos x="690" y="702" />
+        <size width="654" height="28" />
+      </square>
+      <square color="#1678dd">
+        <pos x="690" y="702" />
+        <size width="46" height="28" />
+      </square>
+      <textzone>
+        <pos x="690" y="703" />
+        <size width="46" height="26" />
+        <text font="Segoe UI" fontsize="23" color="#080808" align="center" text="2" />
+      </textzone>
+      <textzone visibility="loaded">
+        <pos x="746" y="704" />
+        <size width="492" height="24" />
+        <text font="Segoe UI" fontsize="18" color="#eef5ff" align="left" action="get_title" scroll="yes" />
+      </textzone>
+      <textzone visibility="not loaded">
+        <pos x="746" y="704" />
+        <size width="492" height="24" />
+        <text font="Segoe UI" fontsize="18" color="#b2b2b2" align="left" text="NO TRACK LOADED" />
+      </textzone>
+      <square color="#e2721a" visibility="masterdeck">
+        <pos x="1245" y="702" />
+        <size width="99" height="28" />
+      </square>
+      <textzone visibility="masterdeck">
+        <pos x="1245" y="702" />
+        <size width="99" height="28" />
+        <text font="Segoe UI" fontsize="14" color="#111111" align="center" text="MASTER" />
+      </textzone>
+      <textzone visibility="display_time 'remain'">
+        <pos x="696" y="734" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="REMAIN / TIME" />
+      </textzone>
+      <textzone visibility="display_time 'elapsed'">
+        <pos x="696" y="734" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="ELAPSED / TIME" />
+      </textzone>
+      <textzone visibility="display_time 'total'">
+        <pos x="696" y="734" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="TOTAL / TIME" />
+      </textzone>
+      <button action="display_time 'remain' ? display_time 'elapsed' : display_time 'remain'" query="false">
+        <pos x="696" y="747" />
+        <size width="130" height="52" />
+        <off color="#101010" border="#34495e" border_size="0" radius="0" />
+        <over color="#101010" border="#34495e" border_size="0" radius="0" />
+        <down color="#101010" border="#34495e" border_size="0" radius="0" />
+        <selected color="#101010" border="#34495e" border_size="0" radius="0" />
+        <text font="Segoe UI" fontsize="30" color="#eef5ff" align="left" action="get_time 'short'" />
+      </button>
+      <textzone>
+        <pos x="1255" y="733" />
+        <size width="80" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="BPM" />
+      </textzone>
+      <textzone visibility="loaded &amp; not masterdeck">
+        <pos x="1248" y="746" />
+        <size width="96" height="36" />
+        <text font="Segoe UI" fontsize="24" color="#ffffff" align="left" action="get_bpm" />
+      </textzone>
+      <textzone visibility="loaded &amp; masterdeck">
+        <pos x="1248" y="746" />
+        <size width="96" height="36" />
+        <text font="Segoe UI" fontsize="24" color="#ff9844" align="left" action="get_bpm" />
+      </textzone>
+      <textzone visibility="loaded">
+        <pos x="1255" y="782" />
+        <size width="80" height="16" />
+        <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" format="%pitch" />
+      </textzone>
+      <textzone visibility="play">
+        <pos x="836" y="733" />
+        <size width="100" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff533f" align="left" text="PLAYING" />
+      </textzone>
+      <textzone visibility="loaded &amp; is_sync">
+        <pos x="941" y="733" />
+        <size width="100" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#53efaa" align="left" text="SYNC" />
+      </textzone>
+      <textzone visibility="loop">
+        <pos x="1044" y="733" />
+        <size width="86" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff9844" align="left" text="LOOP" />
+      </textzone>
+      <textzone visibility="quantize_setcue">
+        <pos x="1131" y="733" />
+        <size width="106" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff9844" align="left" text="Q" />
+      </textzone>
+      <songpos orientation="horizontal" colorPlayed="#303030" colorBass="#1678ff" colorMed="#f6a21a" colorHigh="#f7f1dd" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+        <pos x="836" y="754" />
+        <size width="401" height="40" />
+        <cues>
+          <size width="8" height="20" />
+          <up x="24" y="912" />
+          <down x="24" y="912" />
+          <over x="24" y="912" />
+        </cues>
+      </songpos>
+      <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
+        <pos x="836" y="754" />
+        <size width="401" height="40" />
+        <off color="transparent" />
+        <mouserect x="836" y="754" width="401" height="40" />
+        <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
+      </button>
+    </deck>
+    <deck deck="3">
+      <square color="#101010" border="1" border_color="#bbbbbb">
+        <pos x="24" y="806" />
+        <size width="654" height="100" />
+      </square>
+      <square color="#242424">
+        <pos x="24" y="806" />
+        <size width="654" height="28" />
+      </square>
+      <square color="#1678dd">
+        <pos x="24" y="806" />
+        <size width="46" height="28" />
+      </square>
+      <textzone>
+        <pos x="24" y="807" />
+        <size width="46" height="26" />
+        <text font="Segoe UI" fontsize="23" color="#080808" align="center" text="3" />
+      </textzone>
+      <textzone visibility="loaded">
+        <pos x="80" y="808" />
+        <size width="492" height="24" />
+        <text font="Segoe UI" fontsize="18" color="#eef5ff" align="left" action="get_title" scroll="yes" />
+      </textzone>
+      <textzone visibility="not loaded">
+        <pos x="80" y="808" />
+        <size width="492" height="24" />
+        <text font="Segoe UI" fontsize="18" color="#b2b2b2" align="left" text="NO TRACK LOADED" />
+      </textzone>
+      <square color="#e2721a" visibility="masterdeck">
+        <pos x="579" y="806" />
+        <size width="99" height="28" />
+      </square>
+      <textzone visibility="masterdeck">
+        <pos x="579" y="806" />
+        <size width="99" height="28" />
+        <text font="Segoe UI" fontsize="14" color="#111111" align="center" text="MASTER" />
+      </textzone>
+      <textzone visibility="display_time 'remain'">
+        <pos x="30" y="838" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="REMAIN / TIME" />
+      </textzone>
+      <textzone visibility="display_time 'elapsed'">
+        <pos x="30" y="838" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="ELAPSED / TIME" />
+      </textzone>
+      <textzone visibility="display_time 'total'">
+        <pos x="30" y="838" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="TOTAL / TIME" />
+      </textzone>
+      <button action="display_time 'remain' ? display_time 'elapsed' : display_time 'remain'" query="false">
+        <pos x="30" y="851" />
+        <size width="130" height="52" />
+        <off color="#101010" border="#34495e" border_size="0" radius="0" />
+        <over color="#101010" border="#34495e" border_size="0" radius="0" />
+        <down color="#101010" border="#34495e" border_size="0" radius="0" />
+        <selected color="#101010" border="#34495e" border_size="0" radius="0" />
+        <text font="Segoe UI" fontsize="30" color="#eef5ff" align="left" action="get_time 'short'" />
+      </button>
+      <textzone>
+        <pos x="589" y="837" />
+        <size width="80" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="BPM" />
+      </textzone>
+      <textzone visibility="loaded &amp; not masterdeck">
+        <pos x="582" y="850" />
+        <size width="96" height="36" />
+        <text font="Segoe UI" fontsize="24" color="#ffffff" align="left" action="get_bpm" />
+      </textzone>
+      <textzone visibility="loaded &amp; masterdeck">
+        <pos x="582" y="850" />
+        <size width="96" height="36" />
+        <text font="Segoe UI" fontsize="24" color="#ff9844" align="left" action="get_bpm" />
+      </textzone>
+      <textzone visibility="loaded">
+        <pos x="589" y="886" />
+        <size width="80" height="16" />
+        <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" format="%pitch" />
+      </textzone>
+      <textzone visibility="play">
+        <pos x="170" y="837" />
+        <size width="100" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff533f" align="left" text="PLAYING" />
+      </textzone>
+      <textzone visibility="loaded &amp; is_sync">
+        <pos x="275" y="837" />
+        <size width="100" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#53efaa" align="left" text="SYNC" />
+      </textzone>
+      <textzone visibility="loop">
+        <pos x="378" y="837" />
+        <size width="86" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff9844" align="left" text="LOOP" />
+      </textzone>
+      <textzone visibility="quantize_setcue">
+        <pos x="465" y="837" />
+        <size width="106" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff9844" align="left" text="Q" />
+      </textzone>
+      <songpos orientation="horizontal" colorPlayed="#303030" colorBass="#1678ff" colorMed="#f6a21a" colorHigh="#f7f1dd" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+        <pos x="170" y="858" />
+        <size width="401" height="40" />
+        <cues>
+          <size width="8" height="20" />
+          <up x="24" y="912" />
+          <down x="24" y="912" />
+          <over x="24" y="912" />
+        </cues>
+      </songpos>
+      <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
+        <pos x="170" y="858" />
+        <size width="401" height="40" />
+        <off color="transparent" />
+        <mouserect x="170" y="858" width="401" height="40" />
+        <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
+      </button>
+    </deck>
+    <deck deck="4">
+      <square color="#101010" border="1" border_color="#bbbbbb">
+        <pos x="690" y="806" />
+        <size width="654" height="100" />
+      </square>
+      <square color="#242424">
+        <pos x="690" y="806" />
+        <size width="654" height="28" />
+      </square>
+      <square color="#1678dd">
+        <pos x="690" y="806" />
+        <size width="46" height="28" />
+      </square>
+      <textzone>
+        <pos x="690" y="807" />
+        <size width="46" height="26" />
+        <text font="Segoe UI" fontsize="23" color="#080808" align="center" text="4" />
+      </textzone>
+      <textzone visibility="loaded">
+        <pos x="746" y="808" />
+        <size width="492" height="24" />
+        <text font="Segoe UI" fontsize="18" color="#eef5ff" align="left" action="get_title" scroll="yes" />
+      </textzone>
+      <textzone visibility="not loaded">
+        <pos x="746" y="808" />
+        <size width="492" height="24" />
+        <text font="Segoe UI" fontsize="18" color="#b2b2b2" align="left" text="NO TRACK LOADED" />
+      </textzone>
+      <square color="#e2721a" visibility="masterdeck">
+        <pos x="1245" y="806" />
+        <size width="99" height="28" />
+      </square>
+      <textzone visibility="masterdeck">
+        <pos x="1245" y="806" />
+        <size width="99" height="28" />
+        <text font="Segoe UI" fontsize="14" color="#111111" align="center" text="MASTER" />
+      </textzone>
+      <textzone visibility="display_time 'remain'">
+        <pos x="696" y="838" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="REMAIN / TIME" />
+      </textzone>
+      <textzone visibility="display_time 'elapsed'">
+        <pos x="696" y="838" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="ELAPSED / TIME" />
+      </textzone>
+      <textzone visibility="display_time 'total'">
+        <pos x="696" y="838" />
+        <size width="126" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="TOTAL / TIME" />
+      </textzone>
+      <button action="display_time 'remain' ? display_time 'elapsed' : display_time 'remain'" query="false">
+        <pos x="696" y="851" />
+        <size width="130" height="52" />
+        <off color="#101010" border="#34495e" border_size="0" radius="0" />
+        <over color="#101010" border="#34495e" border_size="0" radius="0" />
+        <down color="#101010" border="#34495e" border_size="0" radius="0" />
+        <selected color="#101010" border="#34495e" border_size="0" radius="0" />
+        <text font="Segoe UI" fontsize="30" color="#eef5ff" align="left" action="get_time 'short'" />
+      </button>
+      <textzone>
+        <pos x="1255" y="837" />
+        <size width="80" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#b2b2b2" align="left" text="BPM" />
+      </textzone>
+      <textzone visibility="loaded &amp; not masterdeck">
+        <pos x="1248" y="850" />
+        <size width="96" height="36" />
+        <text font="Segoe UI" fontsize="24" color="#ffffff" align="left" action="get_bpm" />
+      </textzone>
+      <textzone visibility="loaded &amp; masterdeck">
+        <pos x="1248" y="850" />
+        <size width="96" height="36" />
+        <text font="Segoe UI" fontsize="24" color="#ff9844" align="left" action="get_bpm" />
+      </textzone>
+      <textzone visibility="loaded">
+        <pos x="1255" y="886" />
+        <size width="80" height="16" />
+        <text font="Segoe UI" fontsize="12" color="#b2b2b2" align="left" format="%pitch" />
+      </textzone>
+      <textzone visibility="play">
+        <pos x="836" y="837" />
+        <size width="100" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff533f" align="left" text="PLAYING" />
+      </textzone>
+      <textzone visibility="loaded &amp; is_sync">
+        <pos x="941" y="837" />
+        <size width="100" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#53efaa" align="left" text="SYNC" />
+      </textzone>
+      <textzone visibility="loop">
+        <pos x="1044" y="837" />
+        <size width="86" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff9844" align="left" text="LOOP" />
+      </textzone>
+      <textzone visibility="quantize_setcue">
+        <pos x="1131" y="837" />
+        <size width="106" height="16" />
+        <text font="Segoe UI" fontsize="11" color="#ff9844" align="left" text="Q" />
+      </textzone>
+      <songpos orientation="horizontal" colorPlayed="#303030" colorBass="#1678ff" colorMed="#f6a21a" colorHigh="#f7f1dd" colorVocal="#1678ff" colorInstru="#f6a21a" colorBeat="#f7f1dd" colorNoVocal="#1678ff" colorNoInstru="#f6a21a" colorNoBeat="#f7f1dd">
+        <pos x="836" y="858" />
+        <size width="401" height="40" />
+        <cues>
+          <size width="8" height="20" />
+          <up x="24" y="912" />
+          <down x="24" y="912" />
+          <over x="24" y="912" />
+        </cues>
+      </songpos>
+      <button action="nothing" query="false" rightclick="nothing" middleclick="nothing" dblclick="nothing">
+        <pos x="836" y="858" />
+        <size width="401" height="40" />
+        <off color="transparent" />
+        <mouserect x="836" y="858" width="401" height="40" />
+        <tooltip>Display only. Use the FLX10 to control playback.</tooltip>
+      </button>
+    </deck>
   </panel>
   <panel name="source" group="az-pages" visible="no">
     <textzone>

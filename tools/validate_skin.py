@@ -12,8 +12,8 @@ ELEMENTS = {'skin','font','logo','oninit','button','textzone','square','panel','
             'scratchwave','songpos','browser','filelist','pos','size','text','off',
             'over','down','selected','mouserect','tooltip','grid','cue','mask','cues',
             'up','colors','lists','columns','search','toolbars','scrollbars',
-            'fontsearch','fontheader','textselected'}
-POSITIONED = {'button','textzone','square','logo','scratchwave','songpos','browser','filelist'}
+            'fontsearch','fontheader','textselected','overlay','background'}
+POSITIONED = {'button','textzone','square','logo','scratchwave','songpos','browser','filelist','overlay'}
 
 
 def bounds(e):
@@ -46,6 +46,10 @@ def validate(path):
                 errors.append(f'Off canvas: {e.tag} {x,y,w,h}')
             if e.tag=='button' and e.get('action')!='nothing' and h<52:
                 errors.append('Touch control below 52 design pixels')
+        if e.tag=='scratchwave' and xmls[0]=='az-touch.xml':
+            if e.get('color')=='full': errors.append('Main skin must not force the full-color rainbow renderer')
+            if not all(e.get(k) for k in ('colorVocal','colorInstru','colorBeat')):
+                errors.append('Missing documented AZ three-color shape palette')
         for state in ('up','down','over','off','selected','mask'):
             for sprite in e.findall(state):
                 if 'x' in sprite.attrib and 'y' in sprite.attrib:

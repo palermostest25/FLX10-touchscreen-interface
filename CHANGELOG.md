@@ -1,5 +1,19 @@
 # Change log
 
+## 0.3.0 — 2026-10-14 — actual AZ hierarchy and waveform modes
+
+- User clarified the priority is appearance and no sync test has been run.
+- Inspected the actual AZ screen image. Added per-wave metadata and compact
+  lower time/overview/BPM strips; removed large deck tiles and single sidebar.
+  Default is two scrolling waves with four lower strips.
+- Removed forced full-color waves. Added blue/orange/ivory shape components
+  and explicit AZ COLORS/FREQUENCY COLORS/zoom controls. Stem shapes are not
+  claimed as true frequency bands.
+- Added passive native sync/master feedback; factory mapping remains unchanged.
+  Added slot-colored cue letters/names and correct TOTAL time labels.
+- Added labeled illustrative visual studies, not runtime screenshots/skin assets.
+  No hardware/playback/sync PASS claim added.
+
 ## 0.2.0 — 2026-10-14 — reference layout correction
 
 - Inspected the actual linked Touchy AZ screenshot and current author thread.

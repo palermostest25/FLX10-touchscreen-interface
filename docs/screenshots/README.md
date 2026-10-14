@@ -17,6 +17,10 @@ For each file, record UTC timestamp, host versions, source/export format,
 corresponding gate/test and what the image proves. Video is needed for waveform
 movement and touch behavior; a still image alone cannot prove either.
 
-Any file named `layout-*.png` is an offline layout rendering from XML with empty
-host placeholders. It is labeled **NOT A VIRTUALDJ SCREENSHOT** and cannot be
-used as G4/G5 evidence. No simulated waveform/song data is supplied.
+The empty-state `layout-reference-structure.png` is an offline XML geometry
+diagram, labeled NOT A VIRTUALDJ SCREENSHOT. It contains no song/audio fixture.
+
+The `layout-az-*-illustrative.png` files are separately labeled populated design
+studies using example values and wave shapes to assess placement/palette. Those
+fixtures are confined to the offline renderer, never skin assets. Neither kind
+of diagram is G4/G5 evidence or proof of native waveforms, import or sync.

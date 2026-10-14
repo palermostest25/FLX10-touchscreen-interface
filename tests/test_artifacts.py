@@ -40,8 +40,9 @@ class Artifacts(unittest.TestCase):
 
     def test_four_logical_decks(self):
         four=self.root.find(".//panel[@name='four']")
-        self.assertEqual([d.get('deck') for d in four.findall('deck')],['1','2','3','4'])
-        for d in four.findall('deck'):
+        wave_decks=[d for d in four.findall('deck') if d.find('scratchwave') is not None]
+        self.assertEqual([d.get('deck') for d in wave_decks],['1','2','3','4'])
+        for d in wave_decks:
             self.assertEqual(len(d.findall('scratchwave')),1)
         wavepage=self.root.find(".//panel[@name='waveform']")
         self.assertEqual(len(wavepage.findall('.//songpos')),4)
@@ -49,7 +50,7 @@ class Artifacts(unittest.TestCase):
     def test_modes_do_not_target_wrong_decks(self):
         for name,decks in [('two12',['1','2']),('two34',['3','4'])]:
             p=self.root.find(f".//panel[@name='{name}']")
-            self.assertEqual([d.get('deck') for d in p.findall('deck')],decks)
+            self.assertEqual([d.get('deck') for d in p.findall('deck') if d.find('scratchwave') is not None],decks)
 
     def test_unguarded_load_rejected(self):
         b=next(e for e in self.root.iter('button') if e.get('action','').endswith(' load'))
@@ -74,6 +75,14 @@ class Artifacts(unittest.TestCase):
 
     def test_initialization_must_not_change_audio(self):
         self.root.find('oninit').set('action','master_volume 0%')
+        self.bad_archive(self.root)
+
+    def test_forcing_rainbow_wave_rejected(self):
+        self.root.find('.//scratchwave').set('color','full')
+        self.bad_archive(self.root)
+
+    def test_missing_shape_component_rejected(self):
+        del self.root.find('.//scratchwave').attrib['colorBeat']
         self.bad_archive(self.root)
 
     def test_checksum_manifest_matches(self):

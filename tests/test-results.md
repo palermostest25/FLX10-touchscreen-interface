@@ -1,6 +1,6 @@
-# Test results — 0.2.0 hardware candidate
+# Test results — 0.3.0 hardware candidate
 
-Report UTC: 2026-10-14T11:17:42+00:00
+Report UTC: 2026-10-14T11:44:01+00:00
 
 ## Executed engineering checks
 
@@ -9,7 +9,7 @@ Host: `Linux-6.18.44-x86_64-with-glibc2.41`; Python 3.12.14, Pillow 11.3.0, Powe
 | Check | Result | Evidence / scope |
 |---|---|---|
 | XML/PNG packaging and geometry | PASS | tools/build_skin.py and tools/validate_skin.py: both flat SDK 8 archives, four declared decks, canvas/assets/panel references/guard coverage |
-| Regression suite | PASS | python -m unittest discover -s tests -v: 11 tests, including reject-on-mutation safety cases and reproducible rebuild |
+| Regression suite | PASS | python -m unittest discover -s tests -v: 13 tests, including reject-on-mutation safety cases and reproducible rebuild |
 | PowerShell syntax/file operations | PASS | pwsh -NoProfile -File tests/test_windows_scripts.ps1: 19 assertions, temporary fixture only; no real Windows or VirtualDJ |
 | Actual VirtualDJ parser/rendering | NOT RUN | No Windows host installed |
 | Installed default skin extraction | NOT RUN | Official SDK example inspected instead |
@@ -22,8 +22,8 @@ OneDrive, OS process detection, live controller safety or the audio engine.
 ## Artifact checksums
 
 ```text
-16951d49589f4fa7180b40544b1cfab66b544550a3c7827a9331695bbf84f056  AZ-Touch-3x2.zip
-4fea94f31fcc300167d72e01e11a3c69822f3918876edd35264947a0349073c3  AZ-Touch-SDK-Spike.zip
+c91c1b545a28da0396816d3bcf21ed25a1d53f42371b72a85a0c735859fed3bf  AZ-Touch-3x2.zip
+c3f6a05ada7f836ce2e02945b5060ed51940ece44559fd0827dffa82872698de  AZ-Touch-SDK-Spike.zip
 ```
 
 ## Target acceptance results
@@ -69,3 +69,10 @@ pwsh -NoProfile -File tests/test_windows_scripts.ps1
 
 Use Windows PowerShell 5.1 or PowerShell 7 for the script fixture on Windows.
 After any generator change, regenerate archives/checksums/ledger and update this report.
+
+0.3.0 visual confirmation: inspected two/four populated design studies together,
+corrected a BPM text-fit issue, and confirmed both once. These are illustrative
+fixtures only. Native Shapes color attributes/preset wiring were linted; actual
+frequency/shape appearance and sync remain NOT RUN. The two added tests reject
+forced full-color rendering and missing shape components. User reports they
+have not tried sync; no sync defect or repair is claimed.

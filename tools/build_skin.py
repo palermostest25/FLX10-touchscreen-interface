@@ -12,7 +12,16 @@ ROOT = Path(__file__).resolve().parents[1]
 W, H = 1368, 912
 BG, CELL, LINE, MUTED = '#090909', '#11161d', '#34495e', '#7f8d9b'
 COLORS = ['#00a9dc', '#00a9dc', '#00a9dc', '#00a9dc']
-VERSION = '0.2.0'
+VERSION = '0.3.0'
+BAND_LOW, BAND_MID, BAND_HIGH = '#1678ff', '#f6a21a', '#f7f1dd'
+CUE_COLORS = ['#ff334d','#12d3ff','#12e95b','#8d20ff','#17e071','#ff8224','#254bff','#e5ea1b']
+
+
+def az_wave_colors():
+    # Published Scratchwave shape parameters, also used by native overview shapes.
+    # Shapes are stem components; these colors must not be claimed as frequency bins.
+    return dict(colorVocal=BAND_LOW,colorInstru=BAND_MID,colorBeat=BAND_HIGH,
+                colorNoVocal=BAND_LOW,colorNoInstru=BAND_MID,colorNoBeat=BAND_HIGH)
 
 
 def element(parent, tag, **attrs):
@@ -170,90 +179,93 @@ def browser(parent, y=224, tag=False):
 
 
 def performance_wave(parent, deck, y, height):
-    """Reference hierarchy: one large native wave, not a metadata card per row."""
+    """AZ hierarchy: source/key beside each waveform; one shared time axis."""
     d=element(parent,'deck',deck=deck)
-    button(d,160,y,44,height,str(deck),f"skin_panel 'display{deck}' on",
-           query=f"skin_panel 'display{deck}'",color='#106d9d')
-    sw=element(d,'scratchwave',orientation='horizontal',color='full')
-    box(sw,212,y,1132,height)
+    square(d,24,y,164,height,'#232323')
+    text(d,32,y+3,148,23,'DECK '+str(deck),19,'#2394ff')
+    text(d,32,y+29,148,17,'get_filepath',11,'#dddddd',dynamic=True,visibility='loaded')
+    text(d,32,y+29,148,17,'NO TRACK',12,'#b2b2b2',visibility='not loaded')
+    text(d,32,y+48,32,18,'KEY',11,'#b2b2b2')
+    text(d,70,y+46,108,23,"get_key 'musical'",20,'#ffffff',dynamic=True,visibility='loaded')
+    text(d,32,y+76,57,14,'TEMPO',10,'#b2b2b2')
+    text(d,91,y+70,87,23,'%pitch',16,'#ffffff',fmt=True,visibility='loaded',align='right')
+    if height>150:
+        text(d,32,y+106,148,18,'get_artist',13,'#bbbbbb',dynamic=True,visibility='loaded')
+        text(d,32,y+143,148,22,'Q LOOP',13,'#ff8b45',visibility='quantize_loop')
+        text(d,32,y+169,148,22,'Q CUE',13,'#ff8b45',visibility='quantize_setcue')
+    sw=element(d,'scratchwave',orientation='horizontal',color=BAND_LOW,color2='#acd8ff',**az_wave_colors())
+    box(sw,204,y,1140,height)
     element(sw,'grid',mainsize=2,phrasesize=3,size=1,height=6,pos=0,
-            maincolor='#dddddd',phrasecolor='#ffffff',color='#4a4a4a',
-            transparency=0.5,mirrored='yes',background='no')
+            maincolor='#eeeeee',phrasecolor='#ff4a4a',color='#777777',
+            transparency=0.7,mirrored='yes',background='no')
     cue=element(sw,'cue',y=0,height=height)
     element(cue,'text',dx=12,dy=0,size=14)
     element(cue,'mask',width=12,height=height,x=0,y=912)
-    square(d,777,y,2,height,'#ffffff')
-    shield(d,212,y,1132,height)
+    # Same native overlay structure as the official SDK browser-example skin.
+    overlay=element(sw,'overlay')
+    box(overlay,773,y,2,height)
+    element(overlay,'background',x=48,y=912)
+    shield(d,204,y,1140,height)
 
 
-def cue_bank(parent, deck):
-    x=160+(deck-1)*300
+def cue_bank(parent, deck, x, width):
     d=element(parent,'deck',deck=deck)
-    text(d,x,488,282,20,'DECK '+str(deck),13,'#00a9dc')
+    text(d,x,600,width,18,'HOT CUE / '+str(deck),12,'#aaaaaa',align='center')
+    cell=(width-18)//4
     for n in range(1,9):
-        cx=x+((n-1)%4)*74;cy=512+((n-1)//4)*44
-        square(d,cx,cy,68,38,border=2,border_color=LINE)
-        square(d,cx+2,cy+2,64,3,'#00a9dc',visibility='has_cue '+str(n))
-        text(d,cx+4,cy+7,60,25,'cue_display '+str(n),14,'#f6f6f6',
-             dynamic=True,visibility='has_cue '+str(n),align='center')
-        text(d,cx+4,cy+7,60,25,chr(64+n),14,'#3e4f60',
-             visibility='not has_cue '+str(n),align='center')
+        cx=x+((n-1)%4)*(cell+6);cy=624+((n-1)//4)*30
+        square(d,cx,cy,cell,24,'#232323')
+        square(d,cx,cy,18,24,CUE_COLORS[n-1],visibility='has_cue '+str(n))
+        text(d,cx,cy,18,24,chr(64+n),14,'#0a0a0a',visibility='has_cue '+str(n),align='center')
+        text(d,cx+24,cy,cell-28,24,'%namecue'+str(n),13,'#f4f4f4',
+             fmt=True,visibility='has_cue '+str(n))
+        text(d,cx+4,cy,cell-8,24,chr(64+n)+' —',13,'#ababab',visibility='not has_cue '+str(n))
 
 
 def player_tile(parent,deck,x,y):
     d=element(parent,'deck',deck=deck)
-    square(d,x,y,654,116)
-    text(d,x+10,y+5,36,38,str(deck),30,'#00a9dc')
-    text(d,x+56,y+7,496,27,'get_title',21,dynamic=True,visibility='loaded')
-    text(d,x+56,y+7,496,27,'NO TRACK LOADED',21,'#91a1af',visibility='not loaded')
-    text(d,x+555,y+7,84,22,'PLAYING',12,'#00a9dc',visibility='play',align='right')
-    text(d,x+56,y+36,125,16,'REMAIN',12,MUTED,visibility="display_time 'remain'")
-    text(d,x+56,y+36,125,16,'ELAPSED',12,MUTED,visibility="not display_time 'remain'")
-    timer=button(d,x+54,y+48,142,52,"get_time 'short'",
+    square(d,x,y,654,100,'#101010',border=1,border_color='#bbbbbb')
+    square(d,x,y,654,28,'#242424')
+    square(d,x,y,46,28,'#1678dd')
+    text(d,x,y+1,46,26,str(deck),23,'#080808',align='center')
+    t=text(d,x+56,y+2,492,24,'get_title',18,dynamic=True,visibility='loaded')
+    t.find('text').set('scroll','yes')
+    text(d,x+56,y+2,492,24,'NO TRACK LOADED',18,'#b2b2b2',visibility='not loaded')
+    square(d,x+555,y,99,28,'#e2721a',visibility='masterdeck')
+    text(d,x+555,y,99,28,'MASTER',14,'#111111',visibility='masterdeck',align='center')
+    text(d,x+6,y+32,126,16,'REMAIN / TIME',11,'#b2b2b2',visibility="display_time 'remain'")
+    text(d,x+6,y+32,126,16,'ELAPSED / TIME',11,'#b2b2b2',visibility="display_time 'elapsed'")
+    text(d,x+6,y+32,126,16,'TOTAL / TIME',11,'#b2b2b2',visibility="display_time 'total'")
+    timer=button(d,x+6,y+45,130,52,"get_time 'short'",
                  "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",dynamic=True)
     for tag in ('off','over','down','selected'):
-        timer.find(tag).set('color',CELL);timer.find(tag).set('border_size','0')
+        timer.find(tag).set('color','#101010');timer.find(tag).set('border_size','0')
     timer.find('text').set('fontsize','30');timer.find('text').set('align','left')
-    text(d,x+210,y+36,100,16,'BPM',12,'#fa834a')
-    text(d,x+210,y+52,110,40,'get_bpm',30,'#ff7b48',dynamic=True,visibility='loaded')
-    text(d,x+330,y+36,100,16,'KEY',12,MUTED)
-    text(d,x+330,y+52,100,40,"get_key 'harmonic'",30,'#00d2a0',dynamic=True,visibility='loaded')
-    text(d,x+435,y+36,110,16,'TEMPO',12,MUTED)
-    text(d,x+435,y+52,110,40,'%pitch',26,'#c0ccda',fmt=True,visibility='loaded')
-    text(d,x+56,y+101,490,13,'get_artist',13,MUTED,dynamic=True,visibility='loaded')
-    text(d,x+555,y+41,84,18,'LOOP',12,'#00a9dc',visibility='loop',align='right')
-    text(d,x+555,y+63,84,18,'Q LOOP',12,'#00a9dc',visibility='quantize_loop',align='right')
-    text(d,x+555,y+85,84,18,'Q CUE',12,'#00a9dc',visibility='quantize_setcue',align='right')
-    # Reference deck tiles contain a large overall waveform. Keep host rendering live.
-    # The 3:2 height allows an overview below each tile instead of a squeezed mini wave.
-    sp=element(d,'songpos',orientation='horizontal',colorPlayed='#535353',
-               colorBass='#ed7054',colorMed='#66e499',colorHigh='#c8b1ff')
-    box(sp,x,y+116,654,30)
+    text(d,x+565,y+31,80,16,'BPM',11,'#b2b2b2')
+    text(d,x+558,y+44,96,36,'get_bpm',24,'#ffffff',dynamic=True,visibility='loaded & not masterdeck')
+    text(d,x+558,y+44,96,36,'get_bpm',24,'#ff9844',dynamic=True,visibility='loaded & masterdeck')
+    text(d,x+565,y+80,80,16,'%pitch',12,'#b2b2b2',fmt=True,visibility='loaded')
+    text(d,x+146,y+31,100,16,'PLAYING',11,'#ff533f',visibility='play')
+    text(d,x+251,y+31,100,16,'SYNC',11,'#53efaa',visibility='loaded & is_sync')
+    text(d,x+354,y+31,86,16,'LOOP',11,'#ff9844',visibility='loop')
+    text(d,x+441,y+31,106,16,'Q',11,'#ff9844',visibility='quantize_setcue')
+    sp=element(d,'songpos',orientation='horizontal',colorPlayed='#303030',
+               colorBass=BAND_LOW,colorMed=BAND_MID,colorHigh=BAND_HIGH,**az_wave_colors())
+    box(sp,x+146,y+52,401,40)
     cues=element(sp,'cues');element(cues,'size',width=8,height=20)
     for state in ('up','down','over'):element(cues,state,x=24,y=912)
-    shield(d,x,y+116,654,30)
+    shield(d,x+146,y+52,401,40)
 
 
 def performance(parent):
     for name,decks in [('four',[1,2,3,4]),('two12',[1,2]),('two34',[3,4])]:
         mode=element(parent,'panel',name=name,group='az-performance',visible='yes' if name=='four' else 'no')
-        height=72 if len(decks)==4 else 148
-        for i,deck in enumerate(decks): performance_wave(mode,deck,184+i*(height+4),height)
-    # Four cue banks and a 2x2 deck grid stay visible for every waveform pair.
-    for deck in range(1,5):cue_bank(parent,deck)
-    for deck,x,y in [(1,24,606),(2,690,606),(3,24,756),(4,690,756)]:
+        height=94 if len(decks)==4 else 194
+        for i,deck in enumerate(decks): performance_wave(mode,deck,194+i*(height+6),height)
+        for i,deck in enumerate(decks):cue_bank(mode,deck,24+i*(1320//len(decks)),1320//len(decks)-12)
+    # Four compact deck strips stay visible even when only two scrolling waves are shown.
+    for deck,x,y in [(1,24,702),(2,690,702),(3,24,806),(4,690,806)]:
         player_tile(parent,deck,x,y)
-    for deck in range(1,5):
-        panel=element(parent,'panel',name=f'display{deck}',group='az-display',visible='yes' if deck==1 else 'no')
-        d=element(panel,'deck',deck=deck)
-        text(d,24,180,124,32,'DECK '+str(deck),24,'#00a9dc')
-        text(d,24,225,124,20,'BPM',13,MUTED)
-        text(d,24,249,124,34,'get_bpm',30,'#ff7b48',dynamic=True,visibility='loaded')
-        text(d,24,298,124,20,'KEY',13,MUTED)
-        text(d,24,322,124,34,"get_key 'harmonic'",30,'#00d2a0',dynamic=True,visibility='loaded')
-        text(d,24,372,124,20,'TEMPO',13,MUTED)
-        text(d,24,396,124,34,'%pitch',28,'#eef4fa',fmt=True,visibility='loaded')
-        text(d,24,460,124,23,'TOUCH LOCK',13,'#fa834a')
 
 
 def loads(parent, tag=False):
@@ -271,6 +283,8 @@ def loads(parent, tag=False):
 
 def make_skin():
     r = root('AZ Touch 3x2 · Hardware candidate', 'az-touch.png')
+    r.find('textzone/text').set('text','WAVEFORM')
+    r.findall('textzone')[1].find('text').set('text','AZ TOUCH / DDJ-FLX10')
     pages = [('source','SOURCE'), ('browse','BROWSE'), ('tag','TAG LIST'),
              ('playlist','PLAYLIST'), ('search','SEARCH'), ('waveform','WAVEFORM')]
     for i,(name,label) in enumerate(pages):
@@ -283,11 +297,16 @@ def make_skin():
     button(r, 1014, 68, 155, 52, 'FULLSCREEN', 'maximize')
     button(r, 1181, 68, 163, 52, 'SETTINGS', 'settings')
     # oninit only controls visibility, never the mixer, audio device, or playback.
-    element(r, 'oninit', action="skin_panel 'waveform' on & skin_panel 'four' on & skin_panel 'display1' on")
+    element(r, 'oninit', action="skin_panel 'waveform' on & skin_panel 'two12' on")
     p=element(r, 'panel', name='waveform', group='az-pages', visible='yes')
-    for x,w,name,label in [(24,160,'four','4 DECK'),(196,218,'two12','2 DECK / 1 + 2'),(426,218,'two34','2 DECK / 3 + 4')]:
+    for x,w,name,label in [(24,150,'four','4 DECK'),(184,192,'two12','2 DECK / 1 + 2'),(386,192,'two34','2 DECK / 3 + 4')]:
         button(p,x,130,w,52,label,f"skin_panel '{name}' on",query=f"skin_panel '{name}'")
-    text(p, 676, 139, 120, 30, 'SOURCE', 13, MUTED, align='right')
+    button(p,590,130,204,52,'AZ COLORS',"setting 'skinWaveformType' 'shapes' & setting 'skinOverviewType' 'shapes'",
+           query="setting 'skinWaveformType' 'shapes'")
+    button(p,804,130,264,52,'FREQUENCY COLORS',"setting 'skinWaveformType' 'colors' & setting 'skinOverviewType' 'colors' & setting 'waveUseFrequency' on",
+           query="setting 'skinWaveformType' 'colors' & setting 'waveUseFrequency'")
+    button(p,1080,130,126,52,'ZOOM −','zoom -0.05')
+    button(p,1218,130,126,52,'ZOOM +','zoom +0.05')
     performance(p)
     hints={
         'source':'SOURCE / Expand OneLibrary and choose the attached test USB; local folders stay separate.',
@@ -303,7 +322,6 @@ def make_skin():
         if name=='tag':
             button(page,1180,162,164,52,'BROWSE',"skin_panel 'browse' on")
     # Common status strips and source breadcrumb survive all page switches.
-    text(p,812,139,532,30,'get_browsed_folder_path',13,MUTED,dynamic=True)
     browse_status=element(r,'panel',visibility="not skin_panel 'waveform'")
     text(browse_status,24,752,115,25,'SOURCE',13,MUTED)
     text(browse_status,139,752,1205,25,'get_browsed_folder_path',15,dynamic=True)
@@ -347,6 +365,7 @@ def main():
     draw.rectangle((0,912,2,1199),fill=(255,255,255,255))
     draw.polygon([(0,912),(11,912),(0,923)],fill=(255,255,255,255))
     draw.rectangle((24,912,31,931),fill='#eef5ff')
+    draw.rectangle((48,912,49,1199),fill='#ffffff')
     atlas.save(skin/'az-touch.png',optimize=False,compress_level=9)
     r=make_skin();write_xml(skin/'az-touch.xml',r)
     write_xml(skin/'az-touch-spike.xml',make_spike())

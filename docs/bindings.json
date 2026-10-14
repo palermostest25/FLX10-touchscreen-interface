@@ -1,0 +1,4634 @@
+[
+  {
+    "element": "text",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "format",
+    "expression": "%hour",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "skin_panel 'source' on & browser_window 'folders'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "query",
+    "expression": "skin_panel 'source'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "skin_panel 'browse' on & browser_window 'songs'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "query",
+    "expression": "skin_panel 'browse'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "skin_panel 'tag' on & browser_window 'sidelist'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "query",
+    "expression": "skin_panel 'tag'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "skin_panel 'playlist' on & browser_window 'folders'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "query",
+    "expression": "skin_panel 'playlist'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "skin_panel 'search' on & search & show_keyboard",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "query",
+    "expression": "skin_panel 'search'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "skin_panel 'waveform' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "query",
+    "expression": "skin_panel 'waveform'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "maximize",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "settings",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "oninit",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "skin_panel 'waveform' on & skin_panel 'four' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "skin_panel 'four' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "waveform",
+    "attribute": "query",
+    "expression": "skin_panel 'four'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "skin_panel 'two12' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "waveform",
+    "attribute": "query",
+    "expression": "skin_panel 'two12'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "skin_panel 'two34' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "waveform",
+    "attribute": "query",
+    "expression": "skin_panel 'two34'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "quantize_loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "quantize_setcue",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "quantize_loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "quantize_setcue",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "quantize_loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "quantize_setcue",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "quantize_loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "quantize_setcue",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "cue_display 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "visibility",
+    "expression": "not has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "quantize_loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "quantize_setcue",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "quantize_loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "quantize_setcue",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "cue_display 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "visibility",
+    "expression": "not has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "quantize_loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "quantize_setcue",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "quantize_loop",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "quantize_setcue",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "cue_display 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "visibility",
+    "expression": "not has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "action",
+    "expression": "deck 1 play ? nothing : deck 1 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "query",
+    "expression": "deck 1 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "action",
+    "expression": "deck 2 play ? nothing : deck 2 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "query",
+    "expression": "deck 2 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "action",
+    "expression": "deck 3 play ? nothing : deck 3 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "query",
+    "expression": "deck 3 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "action",
+    "expression": "deck 4 play ? nothing : deck 4 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "query",
+    "expression": "deck 4 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "action",
+    "expression": "browser_window 'folders' & browser_scroll 'parent'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "action",
+    "expression": "browser_window 'songs' & sidelist_add",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "action",
+    "expression": "search & show_keyboard",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "source",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "action",
+    "expression": "deck 1 play ? nothing : deck 1 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "query",
+    "expression": "deck 1 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "action",
+    "expression": "deck 2 play ? nothing : deck 2 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "query",
+    "expression": "deck 2 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "action",
+    "expression": "deck 3 play ? nothing : deck 3 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "query",
+    "expression": "deck 3 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "action",
+    "expression": "deck 4 play ? nothing : deck 4 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "query",
+    "expression": "deck 4 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "action",
+    "expression": "browser_window 'folders' & browser_scroll 'parent'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "action",
+    "expression": "browser_window 'songs' & sidelist_add",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "action",
+    "expression": "search & show_keyboard",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "browse",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "action",
+    "expression": "deck 1 play ? nothing : deck 1 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "query",
+    "expression": "deck 1 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "action",
+    "expression": "deck 2 play ? nothing : deck 2 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "query",
+    "expression": "deck 2 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "action",
+    "expression": "deck 3 play ? nothing : deck 3 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "query",
+    "expression": "deck 3 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "action",
+    "expression": "deck 4 play ? nothing : deck 4 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "query",
+    "expression": "deck 4 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "action",
+    "expression": "browser_window 'folders' & browser_scroll 'parent'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "action",
+    "expression": "browser_window 'songs' & sidelist_add",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "action",
+    "expression": "search & show_keyboard",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "playlist",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "action",
+    "expression": "deck 1 play ? nothing : deck 1 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "query",
+    "expression": "deck 1 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "action",
+    "expression": "deck 2 play ? nothing : deck 2 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "query",
+    "expression": "deck 2 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "action",
+    "expression": "deck 3 play ? nothing : deck 3 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "query",
+    "expression": "deck 3 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "action",
+    "expression": "deck 4 play ? nothing : deck 4 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "query",
+    "expression": "deck 4 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "action",
+    "expression": "browser_window 'folders' & browser_scroll 'parent'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "action",
+    "expression": "browser_window 'songs' & sidelist_add",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "action",
+    "expression": "search & show_keyboard",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "search",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "tag",
+    "attribute": "action",
+    "expression": "deck 1 play ? nothing : deck 1 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "tag",
+    "attribute": "query",
+    "expression": "deck 1 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "tag",
+    "attribute": "action",
+    "expression": "deck 2 play ? nothing : deck 2 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "tag",
+    "attribute": "query",
+    "expression": "deck 2 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "tag",
+    "attribute": "action",
+    "expression": "deck 3 play ? nothing : deck 3 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "tag",
+    "attribute": "query",
+    "expression": "deck 3 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "tag",
+    "attribute": "action",
+    "expression": "deck 4 play ? nothing : deck 4 load",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "tag",
+    "attribute": "query",
+    "expression": "deck 4 play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "tag",
+    "attribute": "action",
+    "expression": "skin_panel 'browse' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "global",
+    "panel": "tag",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_browsed_folder_path",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_time 'remain' 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_time 'remain' 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_time 'remain' 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_title",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "not loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "action",
+    "expression": "get_time 'remain' 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "loaded & not play",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "play",
+    "runtime_evidence": "NOT RUN"
+  }
+]

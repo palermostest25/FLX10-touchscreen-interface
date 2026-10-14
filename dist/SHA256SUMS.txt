@@ -1,0 +1,2 @@
+a3371fc971b777ff642e71d19b6c295350baaf06c3d4eb9335a45b60628a50ce  AZ-Touch-3x2.zip
+19c9f15bbfb77958ef41956347d411c0fcff2ee0ffe19fb02fdb930adda81a06  AZ-Touch-SDK-Spike.zip

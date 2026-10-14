@@ -4,19 +4,29 @@ A native **VirtualDJ XML + PNG skin** for a Surface Pro 7 and DDJ-FLX10. The
 Surface provides a 3:2 player display; VirtualDJ handles audio and libraries;
 the FLX10 remains the mixer and transport controller.
 
-**Status: 0.1.0 hardware validation candidate.** The archives are built and
+**Status: 0.2.0 hardware validation candidate.** The archives are built and
 structurally checked. They have **not been loaded in VirtualDJ** here. Surface
 touch, FLX10 audio/mapping, licensing, and rekordbox OneLibrary import are
 **NOT RUN**. This is a usable installation/test milestone, not a verified stage
 release. Complete the [hardware checklist](docs/hardware-validation.md) before
 using it at a gig. No simulated audio engine or fabricated USB results are included.
 
+The performance layout now follows the **Touchy AZ screenshot linked in the
+handoff**: black canvas, large stacked waveforms at the top, a central cue bank,
+and four larger player displays in a 2×2 grid below. The earlier generic row-card
+layout has been replaced. This is an independent implementation of the visual
+structure, not the original Touchy skin. The linked author thread provides
+screenshots but no downloadable skin ZIP as checked on 14 October 2026.
+
+[Inspect the empty-state layout diagram](docs/screenshots/layout-reference-structure.png)
+(offline geometry rendering, **not** a VirtualDJ runtime screenshot).
+
 ## What is included
 
 - Four live native scratch waveforms, track overview waveforms, cue markers,
   track titles/artists, BPM, pitch, harmonic key, remaining/elapsed time, and
   playing/loop/quantize indicators, all bound to VirtualDJ's decks.
-- Four-deck view and larger two-deck views for 1+2 or 3+4; four status strips on
+- Four-deck view and larger two-deck views for 1+2 or 3+4; four-deck status on
   every main page. No onscreen jog wheels, mixer faders, or EQs.
 - Source, Browse, Playlist, Search and local VirtualDJ Sidelist/Tag List pages
   using the native browser. Source shows the actual selected folder path.
@@ -177,7 +187,9 @@ compatibility with your rekordbox USB.
 ## 7. Use AZ Touch
 
 - **WAVEFORM** returns to the player screen from any main page. Choose **4 DECK**,
-  **2 DECK / 1 + 2**, or **2 DECK / 3 + 4**. The lower four-deck strips remain.
+  **2 DECK / 1 + 2**, or **2 DECK / 3 + 4**. The lower four-deck player grid remains.
+  Tap a waveform's deck number to change the sidebar display; this changes only
+  displayed metadata and does not select an audio deck or change headphone PFL.
 - **SOURCE** exposes the native tree. Expand OneLibrary → USB → playlist.
   Local storage and local rekordbox collections are whatever the actual native
   tree exposes; the skin does not invent drive tiles or copy music.

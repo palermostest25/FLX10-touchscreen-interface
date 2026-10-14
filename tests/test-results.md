@@ -1,6 +1,6 @@
-# Test results — 0.1.0 hardware candidate
+# Test results — 0.2.0 hardware candidate
 
-Report UTC: 2026-10-14T09:59:56+00:00
+Report UTC: 2026-10-14T11:17:42+00:00
 
 ## Executed engineering checks
 
@@ -22,8 +22,8 @@ OneDrive, OS process detection, live controller safety or the audio engine.
 ## Artifact checksums
 
 ```text
-a3371fc971b777ff642e71d19b6c295350baaf06c3d4eb9335a45b60628a50ce  AZ-Touch-3x2.zip
-19c9f15bbfb77958ef41956347d411c0fcff2ee0ffe19fb02fdb930adda81a06  AZ-Touch-SDK-Spike.zip
+16951d49589f4fa7180b40544b1cfab66b544550a3c7827a9331695bbf84f056  AZ-Touch-3x2.zip
+4fea94f31fcc300167d72e01e11a3c69822f3918876edd35264947a0349073c3  AZ-Touch-SDK-Spike.zip
 ```
 
 ## Target acceptance results

@@ -47,6 +47,7 @@ preview and original rekordbox-only tags are not released UI properties.
 | Tag | Above plus `browser_window 'sidelist'` | Native `filelist source="sidelist"`; does not claim Pioneer tag interoperability. | NOT RUN |
 | Search / Keyboard | `search & show_keyboard` | Native keyboard request/search focus; automatic Windows keyboard not assumed. | NOT RUN |
 | Four/two deck view | `skin_panel 'four|two12|two34' on` | One `az-performance` group; display visibility only. | NOT RUN |
+| Deck display sidebar | `skin_panel 'display1|display2|display3|display4' on` | One `az-display` group; metadata display only. Does not issue `select`, PFL or transport commands. | NOT RUN |
 | Load N | `deck N play ? nothing : deck N load`; query `deck N play` | Guard and target are same explicit deck; red PLAYING/LOCKED label. No live-load override. | NOT RUN |
 | Parent | `browser_window 'folders' & browser_scroll 'parent'` | Native folder navigation only. | NOT RUN |
 | Add to Tag | `browser_window 'songs' & sidelist_add` | Focuses songs and adds native selected file(s) to local sidelist. Selection focus must be tested. | NOT RUN |

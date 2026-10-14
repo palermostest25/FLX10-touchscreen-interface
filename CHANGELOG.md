@@ -1,5 +1,16 @@
 # Change log
 
+## 0.2.0 — 2026-10-14 — reference layout correction
+
+- Inspected the actual linked Touchy AZ screenshot and current author thread.
+  The thread currently shows no public skin download; source skin reuse is not claimed.
+- Replaced generic waveform/metadata cards with stacked native full-color waves,
+  a shared cue-bank region, large 2×2 deck information/overview displays, and a
+  display-only deck sidebar, matching the screenshot's hierarchy.
+- Retained native browser, guarded loads, waveform input shields and factory mapper.
+- Added an explicitly labeled empty-host-state layout diagram for visual review.
+  No fake waveform/music data and no new runtime/hardware PASS claims.
+
 ## 0.1.0 — 2026-10-14 — hardware validation candidate
 
 - P0/P1: recorded missing physical Surface, FLX10, VirtualDJ licence/build and USB.

@@ -140,7 +140,7 @@
     "deck": "global",
     "panel": "global",
     "attribute": "action",
-    "expression": "skin_panel 'waveform' on & skin_panel 'four' on",
+    "expression": "skin_panel 'waveform' on & skin_panel 'four' on & skin_panel 'display1' on",
     "runtime_evidence": "NOT RUN"
   },
   {
@@ -192,51 +192,11 @@
     "runtime_evidence": "NOT RUN"
   },
   {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_title",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "not loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_artist",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
     "element": "button",
     "deck": "1",
     "panel": "four",
     "attribute": "action",
-    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "expression": "skin_panel 'display1' on",
     "runtime_evidence": "NOT RUN"
   },
   {
@@ -244,119 +204,7 @@
     "deck": "1",
     "panel": "four",
     "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_time 'short'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "not display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_bpm",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "format",
-    "expression": "%pitch",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_key 'harmonic'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "play",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded & not play",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loop",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "quantize_loop",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "quantize_setcue",
+    "expression": "skin_panel 'display1'",
     "runtime_evidence": "NOT RUN"
   },
   {
@@ -401,7 +249,23 @@
   },
   {
     "element": "button",
-    "deck": "1",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "skin_panel 'display2' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "skin_panel 'display2'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
     "panel": "four",
     "attribute": "action",
     "expression": "nothing",
@@ -409,7 +273,7 @@
   },
   {
     "element": "button",
-    "deck": "1",
+    "deck": "2",
     "panel": "four",
     "attribute": "query",
     "expression": "false",
@@ -417,7 +281,7 @@
   },
   {
     "element": "button",
-    "deck": "1",
+    "deck": "2",
     "panel": "four",
     "attribute": "rightclick",
     "expression": "nothing",
@@ -425,7 +289,7 @@
   },
   {
     "element": "button",
-    "deck": "1",
+    "deck": "2",
     "panel": "four",
     "attribute": "middleclick",
     "expression": "nothing",
@@ -433,16 +297,360 @@
   },
   {
     "element": "button",
-    "deck": "1",
+    "deck": "2",
     "panel": "four",
     "attribute": "dblclick",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "skin_panel 'display3' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "skin_panel 'display3'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "four",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "skin_panel 'display4' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "skin_panel 'display4'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "four",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "skin_panel 'display1' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "query",
+    "expression": "skin_panel 'display1'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "two12",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "skin_panel 'display2' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "query",
+    "expression": "skin_panel 'display2'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "two12",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "skin_panel 'display3' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "query",
+    "expression": "skin_panel 'display3'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "two34",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "skin_panel 'display4' on",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "query",
+    "expression": "skin_panel 'display4'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "action",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "rightclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "middleclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "two34",
+    "attribute": "dblclick",
+    "expression": "nothing",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "square",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 1",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 1",
     "runtime_evidence": "NOT RUN"
@@ -450,7 +658,7 @@
   {
     "element": "text",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 1",
     "runtime_evidence": "NOT RUN"
@@ -458,15 +666,23 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 1",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 2",
     "runtime_evidence": "NOT RUN"
@@ -474,7 +690,7 @@
   {
     "element": "text",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 2",
     "runtime_evidence": "NOT RUN"
@@ -482,15 +698,23 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 2",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 3",
     "runtime_evidence": "NOT RUN"
@@ -498,7 +722,7 @@
   {
     "element": "text",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 3",
     "runtime_evidence": "NOT RUN"
@@ -506,15 +730,23 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 3",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 4",
     "runtime_evidence": "NOT RUN"
@@ -522,7 +754,7 @@
   {
     "element": "text",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 4",
     "runtime_evidence": "NOT RUN"
@@ -530,15 +762,23 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 4",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 5",
     "runtime_evidence": "NOT RUN"
@@ -546,7 +786,7 @@
   {
     "element": "text",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 5",
     "runtime_evidence": "NOT RUN"
@@ -554,15 +794,23 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 5",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 6",
     "runtime_evidence": "NOT RUN"
@@ -570,7 +818,7 @@
   {
     "element": "text",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 6",
     "runtime_evidence": "NOT RUN"
@@ -578,15 +826,23 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 6",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 7",
     "runtime_evidence": "NOT RUN"
@@ -594,7 +850,7 @@
   {
     "element": "text",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 7",
     "runtime_evidence": "NOT RUN"
@@ -602,15 +858,23 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 7",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 8",
     "runtime_evidence": "NOT RUN"
@@ -618,7 +882,7 @@
   {
     "element": "text",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 8",
     "runtime_evidence": "NOT RUN"
@@ -626,263 +890,23 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 8",
     "runtime_evidence": "NOT RUN"
   },
   {
-    "element": "textzone",
+    "element": "square",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_title",
+    "expression": "has_cue 1",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "not loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_artist",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_time 'short'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "not display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_bpm",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "format",
-    "expression": "%pitch",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_key 'harmonic'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "play",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded & not play",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loop",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "quantize_loop",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "quantize_setcue",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "rightclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "middleclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "dblclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "rightclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "middleclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "four",
-    "attribute": "dblclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 1",
     "runtime_evidence": "NOT RUN"
@@ -890,7 +914,7 @@
   {
     "element": "text",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 1",
     "runtime_evidence": "NOT RUN"
@@ -898,15 +922,23 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 1",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 2",
     "runtime_evidence": "NOT RUN"
@@ -914,7 +946,7 @@
   {
     "element": "text",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 2",
     "runtime_evidence": "NOT RUN"
@@ -922,15 +954,23 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 2",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 3",
     "runtime_evidence": "NOT RUN"
@@ -938,7 +978,7 @@
   {
     "element": "text",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 3",
     "runtime_evidence": "NOT RUN"
@@ -946,15 +986,23 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 3",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 4",
     "runtime_evidence": "NOT RUN"
@@ -962,7 +1010,7 @@
   {
     "element": "text",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 4",
     "runtime_evidence": "NOT RUN"
@@ -970,15 +1018,23 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 4",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 5",
     "runtime_evidence": "NOT RUN"
@@ -986,7 +1042,7 @@
   {
     "element": "text",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 5",
     "runtime_evidence": "NOT RUN"
@@ -994,15 +1050,23 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 5",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 6",
     "runtime_evidence": "NOT RUN"
@@ -1010,7 +1074,7 @@
   {
     "element": "text",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 6",
     "runtime_evidence": "NOT RUN"
@@ -1018,15 +1082,23 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 6",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 7",
     "runtime_evidence": "NOT RUN"
@@ -1034,7 +1106,7 @@
   {
     "element": "text",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 7",
     "runtime_evidence": "NOT RUN"
@@ -1042,15 +1114,23 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 7",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 8",
     "runtime_evidence": "NOT RUN"
@@ -1058,7 +1138,7 @@
   {
     "element": "text",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 8",
     "runtime_evidence": "NOT RUN"
@@ -1066,263 +1146,23 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 8",
     "runtime_evidence": "NOT RUN"
   },
   {
-    "element": "textzone",
+    "element": "square",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_title",
+    "expression": "has_cue 1",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "not loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_artist",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_time 'short'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "not display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_bpm",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "format",
-    "expression": "%pitch",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_key 'harmonic'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "play",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded & not play",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loop",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "quantize_loop",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "quantize_setcue",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "rightclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "middleclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "dblclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "rightclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "middleclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "four",
-    "attribute": "dblclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 1",
     "runtime_evidence": "NOT RUN"
@@ -1330,7 +1170,7 @@
   {
     "element": "text",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 1",
     "runtime_evidence": "NOT RUN"
@@ -1338,15 +1178,23 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 1",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 2",
     "runtime_evidence": "NOT RUN"
@@ -1354,7 +1202,7 @@
   {
     "element": "text",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 2",
     "runtime_evidence": "NOT RUN"
@@ -1362,15 +1210,23 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 2",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 3",
     "runtime_evidence": "NOT RUN"
@@ -1378,7 +1234,7 @@
   {
     "element": "text",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 3",
     "runtime_evidence": "NOT RUN"
@@ -1386,15 +1242,23 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 3",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 4",
     "runtime_evidence": "NOT RUN"
@@ -1402,7 +1266,7 @@
   {
     "element": "text",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 4",
     "runtime_evidence": "NOT RUN"
@@ -1410,15 +1274,23 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 4",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 5",
     "runtime_evidence": "NOT RUN"
@@ -1426,7 +1298,7 @@
   {
     "element": "text",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 5",
     "runtime_evidence": "NOT RUN"
@@ -1434,15 +1306,23 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 5",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 6",
     "runtime_evidence": "NOT RUN"
@@ -1450,7 +1330,7 @@
   {
     "element": "text",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 6",
     "runtime_evidence": "NOT RUN"
@@ -1458,15 +1338,23 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 6",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 7",
     "runtime_evidence": "NOT RUN"
@@ -1474,7 +1362,7 @@
   {
     "element": "text",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 7",
     "runtime_evidence": "NOT RUN"
@@ -1482,15 +1370,23 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 7",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 8",
     "runtime_evidence": "NOT RUN"
@@ -1498,7 +1394,7 @@
   {
     "element": "text",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 8",
     "runtime_evidence": "NOT RUN"
@@ -1506,263 +1402,23 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 8",
     "runtime_evidence": "NOT RUN"
   },
   {
-    "element": "textzone",
+    "element": "square",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_title",
+    "expression": "has_cue 1",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "not loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_artist",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_time 'short'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "not display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_bpm",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "format",
-    "expression": "%pitch",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "get_key 'harmonic'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "play",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loaded & not play",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "loop",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "quantize_loop",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "visibility",
-    "expression": "quantize_setcue",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "rightclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "middleclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "dblclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "action",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "rightclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "middleclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "four",
-    "attribute": "dblclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 1",
     "runtime_evidence": "NOT RUN"
@@ -1770,7 +1426,7 @@
   {
     "element": "text",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 1",
     "runtime_evidence": "NOT RUN"
@@ -1778,15 +1434,23 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 1",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 2",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 2",
     "runtime_evidence": "NOT RUN"
@@ -1794,7 +1458,7 @@
   {
     "element": "text",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 2",
     "runtime_evidence": "NOT RUN"
@@ -1802,15 +1466,23 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 2",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 3",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 3",
     "runtime_evidence": "NOT RUN"
@@ -1818,7 +1490,7 @@
   {
     "element": "text",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 3",
     "runtime_evidence": "NOT RUN"
@@ -1826,15 +1498,23 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 3",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 4",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 4",
     "runtime_evidence": "NOT RUN"
@@ -1842,7 +1522,7 @@
   {
     "element": "text",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 4",
     "runtime_evidence": "NOT RUN"
@@ -1850,15 +1530,23 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 4",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 5",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 5",
     "runtime_evidence": "NOT RUN"
@@ -1866,7 +1554,7 @@
   {
     "element": "text",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 5",
     "runtime_evidence": "NOT RUN"
@@ -1874,15 +1562,23 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 5",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 6",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 6",
     "runtime_evidence": "NOT RUN"
@@ -1890,7 +1586,7 @@
   {
     "element": "text",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 6",
     "runtime_evidence": "NOT RUN"
@@ -1898,15 +1594,23 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 6",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 7",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 7",
     "runtime_evidence": "NOT RUN"
@@ -1914,7 +1618,7 @@
   {
     "element": "text",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 7",
     "runtime_evidence": "NOT RUN"
@@ -1922,15 +1626,23 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 7",
     "runtime_evidence": "NOT RUN"
   },
   {
+    "element": "square",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "has_cue 8",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "has_cue 8",
     "runtime_evidence": "NOT RUN"
@@ -1938,7 +1650,7 @@
   {
     "element": "text",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "cue_display 8",
     "runtime_evidence": "NOT RUN"
@@ -1946,7 +1658,7 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "four",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not has_cue 8",
     "runtime_evidence": "NOT RUN"
@@ -1954,7 +1666,7 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "loaded",
     "runtime_evidence": "NOT RUN"
@@ -1962,7 +1674,7 @@
   {
     "element": "text",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "get_title",
     "runtime_evidence": "NOT RUN"
@@ -1970,7 +1682,7 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not loaded",
     "runtime_evidence": "NOT RUN"
@@ -1978,111 +1690,7 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "get_artist",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "get_time 'short'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "get_bpm",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "format",
-    "expression": "%pitch",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "get_key 'harmonic'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "play",
     "runtime_evidence": "NOT RUN"
@@ -2090,15 +1698,111 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
-    "expression": "loaded & not play",
+    "expression": "display_time 'remain'",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "loop",
     "runtime_evidence": "NOT RUN"
@@ -2106,7 +1810,7 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "quantize_loop",
     "runtime_evidence": "NOT RUN"
@@ -2114,7 +1818,7 @@
   {
     "element": "textzone",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "quantize_setcue",
     "runtime_evidence": "NOT RUN"
@@ -2122,7 +1826,7 @@
   {
     "element": "button",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -2130,7 +1834,7 @@
   {
     "element": "button",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "query",
     "expression": "false",
     "runtime_evidence": "NOT RUN"
@@ -2138,7 +1842,7 @@
   {
     "element": "button",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "rightclick",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -2146,7 +1850,7 @@
   {
     "element": "button",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "middleclick",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -2154,247 +1858,15 @@
   {
     "element": "button",
     "deck": "1",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "dblclick",
     "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "rightclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "middleclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "dblclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 1",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 1",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 1",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 2",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 2",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 2",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 8",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 8",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "1",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 8",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "loaded",
     "runtime_evidence": "NOT RUN"
@@ -2402,7 +1874,7 @@
   {
     "element": "text",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "get_title",
     "runtime_evidence": "NOT RUN"
@@ -2410,7 +1882,7 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not loaded",
     "runtime_evidence": "NOT RUN"
@@ -2418,111 +1890,7 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "get_artist",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "get_time 'short'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "get_bpm",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "format",
-    "expression": "%pitch",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "get_key 'harmonic'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "play",
     "runtime_evidence": "NOT RUN"
@@ -2530,15 +1898,111 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
-    "expression": "loaded & not play",
+    "expression": "display_time 'remain'",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "loop",
     "runtime_evidence": "NOT RUN"
@@ -2546,7 +2010,7 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "quantize_loop",
     "runtime_evidence": "NOT RUN"
@@ -2554,7 +2018,7 @@
   {
     "element": "textzone",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "quantize_setcue",
     "runtime_evidence": "NOT RUN"
@@ -2562,7 +2026,7 @@
   {
     "element": "button",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -2570,7 +2034,7 @@
   {
     "element": "button",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "query",
     "expression": "false",
     "runtime_evidence": "NOT RUN"
@@ -2578,7 +2042,7 @@
   {
     "element": "button",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "rightclick",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -2586,7 +2050,7 @@
   {
     "element": "button",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "middleclick",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -2594,247 +2058,15 @@
   {
     "element": "button",
     "deck": "2",
-    "panel": "two12",
+    "panel": "waveform",
     "attribute": "dblclick",
     "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "rightclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "middleclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "dblclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 1",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 1",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 1",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 2",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 2",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 2",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "has_cue 8",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "action",
-    "expression": "cue_display 8",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "2",
-    "panel": "two12",
-    "attribute": "visibility",
-    "expression": "not has_cue 8",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "loaded",
     "runtime_evidence": "NOT RUN"
@@ -2842,7 +2074,7 @@
   {
     "element": "text",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "get_title",
     "runtime_evidence": "NOT RUN"
@@ -2850,7 +2082,7 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not loaded",
     "runtime_evidence": "NOT RUN"
@@ -2858,111 +2090,7 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "get_artist",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "get_time 'short'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "get_bpm",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "format",
-    "expression": "%pitch",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "get_key 'harmonic'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "play",
     "runtime_evidence": "NOT RUN"
@@ -2970,15 +2098,111 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
-    "expression": "loaded & not play",
+    "expression": "display_time 'remain'",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "loop",
     "runtime_evidence": "NOT RUN"
@@ -2986,7 +2210,7 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "quantize_loop",
     "runtime_evidence": "NOT RUN"
@@ -2994,7 +2218,7 @@
   {
     "element": "textzone",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "quantize_setcue",
     "runtime_evidence": "NOT RUN"
@@ -3002,7 +2226,7 @@
   {
     "element": "button",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -3010,7 +2234,7 @@
   {
     "element": "button",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "query",
     "expression": "false",
     "runtime_evidence": "NOT RUN"
@@ -3018,7 +2242,7 @@
   {
     "element": "button",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "rightclick",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -3026,7 +2250,7 @@
   {
     "element": "button",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "middleclick",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -3034,247 +2258,15 @@
   {
     "element": "button",
     "deck": "3",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "dblclick",
     "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "rightclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "middleclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "dblclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 1",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 1",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 1",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 2",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 2",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 2",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 8",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 8",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "3",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 8",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "loaded",
     "runtime_evidence": "NOT RUN"
@@ -3282,7 +2274,7 @@
   {
     "element": "text",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "get_title",
     "runtime_evidence": "NOT RUN"
@@ -3290,7 +2282,7 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "not loaded",
     "runtime_evidence": "NOT RUN"
@@ -3298,111 +2290,7 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "get_artist",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "get_time 'short'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not display_time 'remain'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "get_bpm",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "format",
-    "expression": "%pitch",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "loaded",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "get_key 'harmonic'",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "play",
     "runtime_evidence": "NOT RUN"
@@ -3410,15 +2298,111 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
-    "expression": "loaded & not play",
+    "expression": "display_time 'remain'",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "not display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "display_time 'remain' ? display_time 'elapsed' : display_time 'remain'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "button",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "query",
+    "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_time 'short'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "4",
+    "panel": "waveform",
+    "attribute": "action",
+    "expression": "get_artist",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "loop",
     "runtime_evidence": "NOT RUN"
@@ -3426,7 +2410,7 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "quantize_loop",
     "runtime_evidence": "NOT RUN"
@@ -3434,7 +2418,7 @@
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "visibility",
     "expression": "quantize_setcue",
     "runtime_evidence": "NOT RUN"
@@ -3442,7 +2426,7 @@
   {
     "element": "button",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "action",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -3450,7 +2434,7 @@
   {
     "element": "button",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "query",
     "expression": "false",
     "runtime_evidence": "NOT RUN"
@@ -3458,7 +2442,7 @@
   {
     "element": "button",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "rightclick",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -3466,7 +2450,7 @@
   {
     "element": "button",
     "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "middleclick",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
@@ -3474,241 +2458,209 @@
   {
     "element": "button",
     "deck": "4",
-    "panel": "two34",
-    "attribute": "dblclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "query",
-    "expression": "false",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "rightclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "middleclick",
-    "expression": "nothing",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "button",
-    "deck": "4",
-    "panel": "two34",
+    "panel": "waveform",
     "attribute": "dblclick",
     "expression": "nothing",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
+    "deck": "1",
+    "panel": "display1",
     "attribute": "visibility",
-    "expression": "has_cue 1",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "display1",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "display1",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "display1",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "1",
+    "panel": "display1",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "1",
+    "panel": "display1",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "display2",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "display2",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "display2",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "display2",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "2",
+    "panel": "display2",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "2",
+    "panel": "display2",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "display3",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "display3",
+    "attribute": "action",
+    "expression": "get_bpm",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "display3",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "display3",
+    "attribute": "action",
+    "expression": "get_key 'harmonic'",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "3",
+    "panel": "display3",
+    "attribute": "visibility",
+    "expression": "loaded",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "text",
+    "deck": "3",
+    "panel": "display3",
+    "attribute": "format",
+    "expression": "%pitch",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "textzone",
+    "deck": "4",
+    "panel": "display4",
+    "attribute": "visibility",
+    "expression": "loaded",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "text",
     "deck": "4",
-    "panel": "two34",
+    "panel": "display4",
     "attribute": "action",
-    "expression": "cue_display 1",
+    "expression": "get_bpm",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "two34",
+    "panel": "display4",
     "attribute": "visibility",
-    "expression": "not has_cue 1",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 2",
+    "expression": "loaded",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "text",
     "deck": "4",
-    "panel": "two34",
+    "panel": "display4",
     "attribute": "action",
-    "expression": "cue_display 2",
+    "expression": "get_key 'harmonic'",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "textzone",
     "deck": "4",
-    "panel": "two34",
+    "panel": "display4",
     "attribute": "visibility",
-    "expression": "not has_cue 2",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 3",
+    "expression": "loaded",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "text",
     "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 3",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 4",
+    "panel": "display4",
+    "attribute": "format",
+    "expression": "%pitch",
     "runtime_evidence": "NOT RUN"
   },
   {
     "element": "text",
-    "deck": "4",
-    "panel": "two34",
+    "deck": "global",
+    "panel": "waveform",
     "attribute": "action",
-    "expression": "cue_display 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 4",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 5",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 6",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 7",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "has_cue 8",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "text",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "action",
-    "expression": "cue_display 8",
-    "runtime_evidence": "NOT RUN"
-  },
-  {
-    "element": "textzone",
-    "deck": "4",
-    "panel": "two34",
-    "attribute": "visibility",
-    "expression": "not has_cue 8",
+    "expression": "get_browsed_folder_path",
     "runtime_evidence": "NOT RUN"
   },
   {
@@ -4237,6 +3189,14 @@
     "panel": "tag",
     "attribute": "query",
     "expression": "false",
+    "runtime_evidence": "NOT RUN"
+  },
+  {
+    "element": "panel",
+    "deck": "global",
+    "panel": "global",
+    "attribute": "visibility",
+    "expression": "not skin_panel 'waveform'",
     "runtime_evidence": "NOT RUN"
   },
   {

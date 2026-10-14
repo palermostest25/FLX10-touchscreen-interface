@@ -43,7 +43,8 @@ class Artifacts(unittest.TestCase):
         self.assertEqual([d.get('deck') for d in four.findall('deck')],['1','2','3','4'])
         for d in four.findall('deck'):
             self.assertEqual(len(d.findall('scratchwave')),1)
-            self.assertEqual(len(d.findall('songpos')),1)
+        wavepage=self.root.find(".//panel[@name='waveform']")
+        self.assertEqual(len(wavepage.findall('.//songpos')),4)
 
     def test_modes_do_not_target_wrong_decks(self):
         for name,decks in [('two12',['1','2']),('two34',['3','4'])]:

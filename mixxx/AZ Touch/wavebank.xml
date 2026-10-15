@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Template>
+  <WidgetStack currentpage="[Skin],wave_view">
+    <Children>
+      <WidgetGroup trigger="[Skin],wave12">
+        <Layout>vertical</Layout>
+        <Size>0me,0me</Size>
+        <Children>
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <Size>0me,50me</Size>
+            <Children>
+              <Template src="skin:sidebar_deck_info.xml">
+                <SetVariable name="channel">1</SetVariable>
+              </Template>
+              <Template src="skin:waveform_colored.xml">
+                <SetVariable name="channel">1</SetVariable>
+                <SetVariable name="SignalColor">#555555</SetVariable>
+                <SetVariable name="SignalLowColor">#1678ff</SetVariable>
+                <SetVariable name="SignalMidColor">#f6a21a</SetVariable>
+                <SetVariable name="SignalHighColor">#f7f1dd</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <Size>0me,50me</Size>
+            <Children>
+              <Template src="skin:sidebar_deck_info.xml">
+                <SetVariable name="channel">2</SetVariable>
+              </Template>
+              <Template src="skin:waveform_colored.xml">
+                <SetVariable name="channel">2</SetVariable>
+                <SetVariable name="SignalColor">#555555</SetVariable>
+                <SetVariable name="SignalLowColor">#1678ff</SetVariable>
+                <SetVariable name="SignalMidColor">#f6a21a</SetVariable>
+                <SetVariable name="SignalHighColor">#f7f1dd</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+      <WidgetGroup trigger="[Skin],wave34">
+        <Layout>vertical</Layout>
+        <Size>0me,0me</Size>
+        <Children>
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <Size>0me,50me</Size>
+            <Children>
+              <Template src="skin:sidebar_deck_info.xml">
+                <SetVariable name="channel">3</SetVariable>
+              </Template>
+              <Template src="skin:waveform_colored.xml">
+                <SetVariable name="channel">3</SetVariable>
+                <SetVariable name="SignalColor">#555555</SetVariable>
+                <SetVariable name="SignalLowColor">#1678ff</SetVariable>
+                <SetVariable name="SignalMidColor">#f6a21a</SetVariable>
+                <SetVariable name="SignalHighColor">#f7f1dd</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <Size>0me,50me</Size>
+            <Children>
+              <Template src="skin:sidebar_deck_info.xml">
+                <SetVariable name="channel">4</SetVariable>
+              </Template>
+              <Template src="skin:waveform_colored.xml">
+                <SetVariable name="channel">4</SetVariable>
+                <SetVariable name="SignalColor">#555555</SetVariable>
+                <SetVariable name="SignalLowColor">#1678ff</SetVariable>
+                <SetVariable name="SignalMidColor">#f6a21a</SetVariable>
+                <SetVariable name="SignalHighColor">#f7f1dd</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+      <WidgetGroup trigger="[Skin],wave4">
+        <Layout>vertical</Layout>
+        <Size>0me,0me</Size>
+        <Children>
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <Size>0me,50me</Size>
+            <Children>
+              <Template src="skin:sidebar_deck_info.xml">
+                <SetVariable name="channel">3</SetVariable>
+              </Template>
+              <Template src="skin:waveform_colored.xml">
+                <SetVariable name="channel">3</SetVariable>
+                <SetVariable name="SignalColor">#555555</SetVariable>
+                <SetVariable name="SignalLowColor">#1678ff</SetVariable>
+                <SetVariable name="SignalMidColor">#f6a21a</SetVariable>
+                <SetVariable name="SignalHighColor">#f7f1dd</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <Size>0me,50me</Size>
+            <Children>
+              <Template src="skin:sidebar_deck_info.xml">
+                <SetVariable name="channel">1</SetVariable>
+              </Template>
+              <Template src="skin:waveform_colored.xml">
+                <SetVariable name="channel">1</SetVariable>
+                <SetVariable name="SignalColor">#555555</SetVariable>
+                <SetVariable name="SignalLowColor">#1678ff</SetVariable>
+                <SetVariable name="SignalMidColor">#f6a21a</SetVariable>
+                <SetVariable name="SignalHighColor">#f7f1dd</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <Size>0me,50me</Size>
+            <Children>
+              <Template src="skin:sidebar_deck_info.xml">
+                <SetVariable name="channel">2</SetVariable>
+              </Template>
+              <Template src="skin:waveform_colored.xml">
+                <SetVariable name="channel">2</SetVariable>
+                <SetVariable name="SignalColor">#555555</SetVariable>
+                <SetVariable name="SignalLowColor">#1678ff</SetVariable>
+                <SetVariable name="SignalMidColor">#f6a21a</SetVariable>
+                <SetVariable name="SignalHighColor">#f7f1dd</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
+            <Layout>horizontal</Layout>
+            <Size>0me,50me</Size>
+            <Children>
+              <Template src="skin:sidebar_deck_info.xml">
+                <SetVariable name="channel">4</SetVariable>
+              </Template>
+              <Template src="skin:waveform_colored.xml">
+                <SetVariable name="channel">4</SetVariable>
+                <SetVariable name="SignalColor">#555555</SetVariable>
+                <SetVariable name="SignalLowColor">#1678ff</SetVariable>
+                <SetVariable name="SignalMidColor">#f6a21a</SetVariable>
+                <SetVariable name="SignalHighColor">#f7f1dd</SetVariable>
+              </Template>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+    </Children>
+  </WidgetStack>
+</Template>

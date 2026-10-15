@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Template>
+  <WidgetGroup>
+    <ObjectName>ShortcutPanel</ObjectName>
+    <Size>0me,0me</Size>
+    <Layout>vertical</Layout>
+    <Children>
+      <WidgetGroup>
+        <ObjectName>ShortcutControls</ObjectName>
+        <Layout>vertical</Layout>
+        <Size>0me,0me</Size>
+        <Children>
+          <WidgetGroup>
+            <ObjectName>ShortcutSectionDecks</ObjectName>
+            <Layout>vertical</Layout>
+            <Size>0me,0me</Size>
+            <Children>
+              <Label>
+                <Text>WAVEFORM VIEW — all four decks stay available</Text>
+                <Size>0me,40f</Size>
+              </Label>
+              <WidgetGroup>
+                <Layout>horizontal</Layout>
+                <Children>
+                  <PushButton>
+                    <ObjectName>WaveViewButton</ObjectName>
+                    <Size>110f,48f</Size>
+                    <NumberStates>2</NumberStates>
+                    <State>
+                      <Number>0</Number>
+                      <Text>WAVES 1+2</Text>
+                    </State>
+                    <State>
+                      <Number>1</Number>
+                      <Text>WAVES 1+2</Text>
+                    </State>
+                    <Connection>
+                      <ConfigKey>[Skin],wave12</ConfigKey>
+                    </Connection>
+                    <Connection>
+                      <ConfigKey>[Skin],wave12</ConfigKey>
+                      <BindProperty>enabled</BindProperty>
+                      <Transform>
+                        <Not />
+                      </Transform>
+                    </Connection>
+                  </PushButton>
+                  <PushButton>
+                    <ObjectName>WaveViewButton</ObjectName>
+                    <Size>110f,48f</Size>
+                    <NumberStates>2</NumberStates>
+                    <State>
+                      <Number>0</Number>
+                      <Text>WAVES 3+4</Text>
+                    </State>
+                    <State>
+                      <Number>1</Number>
+                      <Text>WAVES 3+4</Text>
+                    </State>
+                    <Connection>
+                      <ConfigKey>[Skin],wave34</ConfigKey>
+                    </Connection>
+                    <Connection>
+                      <ConfigKey>[Skin],wave34</ConfigKey>
+                      <BindProperty>enabled</BindProperty>
+                      <Transform>
+                        <Not />
+                      </Transform>
+                    </Connection>
+                  </PushButton>
+                  <PushButton>
+                    <ObjectName>WaveViewButton</ObjectName>
+                    <Size>110f,48f</Size>
+                    <NumberStates>2</NumberStates>
+                    <State>
+                      <Number>0</Number>
+                      <Text>4 WAVES</Text>
+                    </State>
+                    <State>
+                      <Number>1</Number>
+                      <Text>4 WAVES</Text>
+                    </State>
+                    <Connection>
+                      <ConfigKey>[Skin],wave4</ConfigKey>
+                    </Connection>
+                    <Connection>
+                      <ConfigKey>[Skin],wave4</ConfigKey>
+                      <BindProperty>enabled</BindProperty>
+                      <Transform>
+                        <Not />
+                      </Transform>
+                    </Connection>
+                  </PushButton>
+                </Children>
+              </WidgetGroup>
+              <Label>
+                <Text>Waveforms are touch locked. Set 3-Band and beat-grid opacity in Preferences &gt; Waveforms.</Text>
+                <Size>0me,44f</Size>
+              </Label>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
+            <ObjectName>ShortcutColumnDivider</ObjectName>
+            <Size>0me,1f</Size>
+          </WidgetGroup>
+          <WidgetGroup>
+            <ObjectName>ShortcutSectionRec</ObjectName>
+            <Layout>vertical</Layout>
+            <Size>0me,130f</Size>
+            <Children>
+              <WidgetGroup>
+                <Size>0me,0me</Size>
+              </WidgetGroup>
+              <Label>
+                <ObjectName>ShortcutSectionTitle</ObjectName>
+                <Text>RECORDING</Text>
+                <Size>me,22f</Size>
+              </Label>
+              <WidgetGroup>
+                <ObjectName>RecordingButtons</ObjectName>
+                <Layout>horizontal</Layout>
+                <Size>me,65f</Size>
+                <Children>
+                  <PushButton>
+                    <ObjectName>RecordingToggleBtn</ObjectName>
+                    <NumberStates>4</NumberStates>
+                    <Size>me,55f</Size>
+                    <State>
+                      <Number>0</Number>
+                      <Text>START REC</Text>
+                    </State>
+                    <State>
+                      <Number>1</Number>
+                      <Text>STOP REC</Text>
+                    </State>
+                    <State>
+                      <Number>2</Number>
+                      <Text>STOP REC</Text>
+                    </State>
+                    <State>
+                      <Number>3</Number>
+                      <Text>STOP REC</Text>
+                    </State>
+                    <Connection>
+                      <ConfigKey>[Recording],toggle_recording</ConfigKey>
+                    </Connection>
+                    <Connection>
+                      <ConfigKey>[Recording],status</ConfigKey>
+                      <ConnectValueFromWidget>false</ConnectValueFromWidget>
+                    </Connection>
+                  </PushButton>
+                  <WidgetGroup>
+                    <Size>8f,55f</Size>
+                  </WidgetGroup>
+                  <RecordingDuration>
+                    <ObjectName>ShortcutRecDuration</ObjectName>
+                    <Size>me,55f</Size>
+                    <InactiveText>00:00:00</InactiveText>
+                    <Alignment>center</Alignment>
+                    <Connection>
+                      <ConfigKey>[Recording],status</ConfigKey>
+                      <BindProperty>highlight</BindProperty>
+                    </Connection>
+                  </RecordingDuration>
+                </Children>
+              </WidgetGroup>
+              <WidgetGroup>
+                <Size>0me,0me</Size>
+              </WidgetGroup>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+      <WidgetGroup>
+        <ObjectName>Decks</ObjectName>
+        <Layout>horizontal</Layout>
+        <Size>0me,160f</Size>
+        <Children>
+          <Template src="skin:deckminimal.xml">
+            <SetVariable name="channel">1</SetVariable>
+          </Template>
+        </Children>
+      </WidgetGroup>
+    </Children>
+  </WidgetGroup>
+</Template>

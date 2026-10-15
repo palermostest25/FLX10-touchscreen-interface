@@ -1,5 +1,18 @@
 # AZ Touch visual authority
 
+The current Mixxx adaptation inherits the same pinned AZ composition. Its native
+surface contract and concrete colour tokens are in `docs/mixxx-surface.md`.
+Native XML/QSS uses black/charcoal, Segoe UI with DejaVu Sans fallback, and real
+3-Band waves: blue lows `#1678ff`, orange mids `#f6a21a`, ivory highs `#f7f1dd`.
+Keep the 1+2, 3+4 and four-wave modes, four labelled summaries, fixed playheads
+and native beat grids. Library/setup summaries retain a 24px header with 13px
+DECK/title text; Browse/Back labels are 14px. The selected wave-view button stays
+disabled so a repeated tap retains the current view. Waveforms and overviews
+remain protected from input/drops; load buttons disable while their deck plays.
+
+The sections below continue to document the retained VirtualDJ implementation;
+its stem-colour limitation must not be confused with Mixxx's real 3-Band renderer.
+
 Mode: Operate. Refinement follows the actual XDJ-AZ screen, rather than generic
 UI cards or the Touchy developer's interpretation. Product truth is in PRODUCT.md.
 

@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Template>
+  <WidgetGroup>
+    <SizePolicy>me,me</SizePolicy>
+    <Layout>vertical</Layout>
+    <Children>
+      <WidgetGroup>
+        <Layout>horizontal</Layout>
+        <Size>0me,48f</Size>
+        <Children>
+          <PushButton>
+            <ObjectName>LoadDeckButton</ObjectName>
+            <Size>0me,48f</Size>
+            <Connection>
+              <ConfigKey>[Channel1],LoadSelectedTrack</ConfigKey>
+            </Connection>
+            <NumberStates>2</NumberStates>
+            <State>
+              <Number>0</Number>
+              <Text>LOAD DECK 1</Text>
+            </State>
+            <State>
+              <Number>1</Number>
+              <Text>LOAD DECK 1</Text>
+            </State>
+            <Connection>
+              <ConfigKey>[Channel1],play</ConfigKey>
+              <BindProperty>enabled</BindProperty>
+              <Transform>
+                <Not />
+              </Transform>
+            </Connection>
+          </PushButton>
+          <PushButton>
+            <ObjectName>LoadDeckButton</ObjectName>
+            <Size>0me,48f</Size>
+            <Connection>
+              <ConfigKey>[Channel2],LoadSelectedTrack</ConfigKey>
+            </Connection>
+            <NumberStates>2</NumberStates>
+            <State>
+              <Number>0</Number>
+              <Text>LOAD DECK 2</Text>
+            </State>
+            <State>
+              <Number>1</Number>
+              <Text>LOAD DECK 2</Text>
+            </State>
+            <Connection>
+              <ConfigKey>[Channel2],play</ConfigKey>
+              <BindProperty>enabled</BindProperty>
+              <Transform>
+                <Not />
+              </Transform>
+            </Connection>
+          </PushButton>
+          <PushButton>
+            <ObjectName>LoadDeckButton</ObjectName>
+            <Size>0me,48f</Size>
+            <Connection>
+              <ConfigKey>[Channel3],LoadSelectedTrack</ConfigKey>
+            </Connection>
+            <NumberStates>2</NumberStates>
+            <State>
+              <Number>0</Number>
+              <Text>LOAD DECK 3</Text>
+            </State>
+            <State>
+              <Number>1</Number>
+              <Text>LOAD DECK 3</Text>
+            </State>
+            <Connection>
+              <ConfigKey>[Channel3],play</ConfigKey>
+              <BindProperty>enabled</BindProperty>
+              <Transform>
+                <Not />
+              </Transform>
+            </Connection>
+          </PushButton>
+          <PushButton>
+            <ObjectName>LoadDeckButton</ObjectName>
+            <Size>0me,48f</Size>
+            <Connection>
+              <ConfigKey>[Channel4],LoadSelectedTrack</ConfigKey>
+            </Connection>
+            <NumberStates>2</NumberStates>
+            <State>
+              <Number>0</Number>
+              <Text>LOAD DECK 4</Text>
+            </State>
+            <State>
+              <Number>1</Number>
+              <Text>LOAD DECK 4</Text>
+            </State>
+            <Connection>
+              <ConfigKey>[Channel4],play</ConfigKey>
+              <BindProperty>enabled</BindProperty>
+              <Transform>
+                <Not />
+              </Transform>
+            </Connection>
+          </PushButton>
+        </Children>
+      </WidgetGroup>
+      <WidgetGroup>
+        <ObjectName>LibraryWrapper</ObjectName>
+        <Layout>vertical</Layout>
+        <Size>0me,0me</Size>
+        <Children>
+          <WidgetGroup>
+            <ObjectName>SidebarContainer</ObjectName>
+            <Layout>horizontal</Layout>
+            <Size>0me,40f</Size>
+            <Children>
+              <PushButton>
+                <ObjectName>SidebarButton</ObjectName>
+                <Size>75f,40f</Size>
+                <NumberStates>2</NumberStates>
+                <State>
+                  <Number>0</Number>
+                  <Text>BROWSE</Text>
+                </State>
+                <State>
+                  <Number>1</Number>
+                  <Text>BROWSE</Text>
+                </State>
+                <Connection>
+                  <ConfigKey>[Sidebar],sidebar_visible</ConfigKey>
+                </Connection>
+              </PushButton>
+              <WidgetGroup>
+                <Size>20f,30f</Size>
+              </WidgetGroup>
+              <SearchBox>
+                <ObjectName>SearchBox</ObjectName>
+                <Size>0me,40f</Size>
+              </SearchBox>
+            </Children>
+          </WidgetGroup>
+          <WidgetGroup>
+            <SizePolicy>me,me</SizePolicy>
+            <Layout>horizontal</Layout>
+            <Size>0me,0me</Size>
+            <Children>
+              <WidgetGroup>
+                <ObjectName>SidebarWrapper</ObjectName>
+                <Layout>horizontal</Layout>
+                <Children>
+                  <LibrarySidebar>
+                    <ObjectName>LibrarySidebar</ObjectName>
+                    <Size>200f,0me</Size>
+                  </LibrarySidebar>
+                </Children>
+                <Connection>
+                  <ConfigKey>[Sidebar],sidebar_visible</ConfigKey>
+                  <BindProperty>visible</BindProperty>
+                </Connection>
+              </WidgetGroup>
+              <WidgetGroup>
+                <ObjectName>LibraryWrapper</ObjectName>
+                <Layout>horizontal</Layout>
+                <Children>
+                  <Library>
+                    <ObjectName>Library</ObjectName>
+                    <Size>0me,0me</Size>
+                    <BgColor>#000</BgColor>
+                    <FgColor>#75001a</FgColor>
+                    <TrackTableBackgroundColorOpacity>0.4</TrackTableBackgroundColorOpacity>
+                  </Library>
+                </Children>
+                <Connection>
+                  <ConfigKey>[Sidebar],sidebar_visible</ConfigKey>
+                  <Transform>
+                    <Not />
+                  </Transform>
+                </Connection>
+              </WidgetGroup>
+            </Children>
+          </WidgetGroup>
+        </Children>
+      </WidgetGroup>
+      <WidgetGroup>
+        <ObjectName>Decks</ObjectName>
+        <Layout>horizontal</Layout>
+        <Size>0me,160f</Size>
+        <Children>
+          <Template src="skin:deckminimal.xml">
+            <SetVariable name="channel">1</SetVariable>
+          </Template>
+        </Children>
+      </WidgetGroup>
+    </Children>
+  </WidgetGroup>
+</Template>

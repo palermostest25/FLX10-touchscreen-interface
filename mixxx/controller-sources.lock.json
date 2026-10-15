@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/Veezuhz/Mixxx_FLX10_Controller_Mapping",
+  "commit": "c668a0b0aa3d1230e19806380f1a711ea7a0f271",
+  "variant": "NON-HID FLX10 Controller (working)(most stable)",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/Veezuhz/Mixxx_FLX10_Controller_Mapping/c668a0b0aa3d1230e19806380f1a711ea7a0f271/NON-HID%20FLX10%20Controller%20%28working%29%28most%20stable%29/Pioneer-DDJ-FLX10-scripts.js",
+      "sha256": "6ce275a90738e2691024e76becc1e73b1d529b7f627a39ae462715a14dd88c1b",
+      "destination": "AZ-Touch-FLX10-scripts.js"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Veezuhz/Mixxx_FLX10_Controller_Mapping/c668a0b0aa3d1230e19806380f1a711ea7a0f271/NON-HID%20FLX10%20Controller%20%28working%29%28most%20stable%29/Pioneer-DDJ-FLX10.midi.xml",
+      "sha256": "0214f1d6a1125f1825f90c66d1b59c8bf69f31242c135b1e55097f4abc3d1e5e",
+      "destination": "AZ-Touch-FLX10.midi.xml"
+    }
+  ]
+}

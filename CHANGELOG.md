@@ -1,5 +1,14 @@
 # Change log
 
+## Mixxx candidate 0.1.0 — 2026-10-15
+
+- Added a GPL Surface adaptation of Marc Monka’s XDJ OPEN SOURCE skin with native three-band frequency waves, crossing grids, 1+2/3+4/four-wave views and four persistent summaries.
+- Added waveform touch/drop locks and guarded library loads; labelled library summaries with deck numbers and native track titles.
+- Added pinned MIDI-only mapping downloads, SHA-256 verification, Windows install/rollback and a read-only USB format check.
+- Added real Linux Mixxx runtime captures, mapping audits and a scoped validation report. OneLibrary and Windows/FLX10 hardware checks remain outstanding.
+- Retained the VirtualDJ 0.3.0 candidate and full instructions in README-VirtualDJ.md.
+
+
 ## 0.3.0 — 2026-10-14 — actual AZ hierarchy and waveform modes
 
 - User clarified the priority is appearance and no sync test has been run.

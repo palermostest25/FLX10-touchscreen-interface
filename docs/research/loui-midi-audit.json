@@ -1,0 +1,152 @@
+{
+  "controls": 238,
+  "duplicate_addresses": {
+    "B0:13": [
+      [
+        "[Channel1]",
+        "volume"
+      ],
+      [
+        "[QuickEffectRack1_[Channel1]]",
+        "mix"
+      ]
+    ],
+    "B1:13": [
+      [
+        "[Channel2]",
+        "volume"
+      ],
+      [
+        "[QuickEffectRack1_[Channel2]]",
+        "mix"
+      ]
+    ],
+    "B2:13": [
+      [
+        "[Channel3]",
+        "volume"
+      ],
+      [
+        "[QuickEffectRack1_[Channel3]]",
+        "mix"
+      ]
+    ],
+    "B3:13": [
+      [
+        "[Channel4]",
+        "volume"
+      ],
+      [
+        "[QuickEffectRack1_[Channel4]]",
+        "mix"
+      ]
+    ],
+    "B3:1A": [
+      [
+        "[QuickEffectRack1_[Channel4]]",
+        "super1"
+      ],
+      [
+        "[Stem3_Channel4]",
+        "volume"
+      ]
+    ],
+    "90:18": [
+      [
+        "[QuickEffectRack1_[Channel1]]",
+        "enabled"
+      ],
+      [
+        "[Channel1]",
+        "orientation_right"
+      ]
+    ],
+    "91:18": [
+      [
+        "[QuickEffectRack1_[Channel2]]",
+        "enabled"
+      ],
+      [
+        "[Channel2]",
+        "orientation_right"
+      ]
+    ],
+    "92:18": [
+      [
+        "[QuickEffectRack1_[Channel3]]",
+        "enabled"
+      ],
+      [
+        "[Channel3]",
+        "orientation_right"
+      ]
+    ],
+    "93:18": [
+      [
+        "[QuickEffectRack1_[Channel4]]",
+        "enabled"
+      ],
+      [
+        "[Channel4]",
+        "orientation_right"
+      ]
+    ],
+    "90:58": [
+      [
+        "[Channel1]",
+        "sync_enabled"
+      ],
+      [
+        "[Channel1]",
+        "sync_key"
+      ],
+      [
+        "[Channel1]",
+        "sync_enabled"
+      ]
+    ],
+    "91:58": [
+      [
+        "[Channel2]",
+        "sync_enabled"
+      ],
+      [
+        "[Channel2]",
+        "sync_key"
+      ],
+      [
+        "[Channel2]",
+        "sync_enabled"
+      ]
+    ],
+    "92:58": [
+      [
+        "[Channel3]",
+        "sync_enabled"
+      ],
+      [
+        "[Channel3]",
+        "sync_key"
+      ],
+      [
+        "[Channel3]",
+        "sync_enabled"
+      ]
+    ],
+    "93:58": [
+      [
+        "[Channel4]",
+        "sync_enabled"
+      ],
+      [
+        "[Channel4]",
+        "sync_key"
+      ],
+      [
+        "[Channel4]",
+        "sync_enabled"
+      ]
+    ]
+  },
+  "missing_script_functions": []
+}
